@@ -86,10 +86,13 @@
     padding: 0 5%
     width: 1180px
     margin: 0 auto
-    margin-top: -200px
+    margin-bottom: 50px
+    margin-top: -180px
 
   .carousel-3d-container
     height: 100%!important
+    margin: 0!important
+    margin-bottom: 20px!important
 
   .carousel-3d-slider
     width: 70%!important
@@ -178,7 +181,6 @@
     align-items: stretch
     justify-content: space-between
     flex-wrap: wrap
-    margin-bottom: 50px
   .blog__post.main-blog__post
     width: 66%
     margin-bottom: 0

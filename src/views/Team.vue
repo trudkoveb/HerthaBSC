@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="margin-top-30")
+  div(class="margin-top-30 main-content")
     table(class="team-table")
       thead
         tr
@@ -285,6 +285,21 @@
 
 <style lang="sass?indentedSyntax=true">
   table.team-table
-    width: 50%
-    margin: 200px auto
+    width: 70%
+    margin: 0 auto
+    border-collapse: collapse
+    thead
+      th
+        font-family: 'RobotoLight'
+        font-size: 17px
+        border: 1px solid  #000
+        padding: 10px 0
+    tbody
+      td
+        font-family: 'HelveticaReg'
+        font-size: 14px
+        padding: 10px 0
+        border: 1px solid  #000
+        &:first-child
+          font-weight: bold
 </style>
