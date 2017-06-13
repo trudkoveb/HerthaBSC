@@ -31,7 +31,9 @@
           <div class="news-date">
             <i class="ion-android-time"></i><span>{{ post.date }}</span>
         </div>
-        <img :src="post.image" alt="">
+        <div class="news-image">
+          <img :src="post.image" alt="">
+        </div>
         <div class="news-text-wrapper ">
             <h3 v-html="post.title">>{{ post.title }}</h3>
             <p>{{ post.shortTitle }}</p>
@@ -82,6 +84,8 @@
 <style lang="sass?indentedSyntax=true">
   .main-content
     padding: 0 5%
+    width: 1180px
+    margin: 0 auto
     margin-top: -200px
 
   .carousel-3d-container
@@ -124,7 +128,25 @@
           text-transform: uppercase
           text-decoration: none
           font-weight: bold
-          border-bottom: 1px solid  #dfdfdf
+          display: inline-block
+          position: relative
+          &:before
+           content: ""
+           position: absolute
+           width: 100%
+           height: 1px
+           bottom: -5px
+           left: 0
+           background-color: #fff
+           visibility: hidden
+           -webkit-transform: scaleX(0)
+           transform: scaleX(0)
+           -webkit-transition: all 0.3s ease-in-out 0s
+           transition: all 0.3s ease-in-out 0s
+          &:hover:before
+           visibility: visible;
+           -webkit-transform: scaleX(1);
+           transform: scaleX(1);
 
   .slide-a:after, .slide-b:after, .slide-c:after
     content: ''
@@ -159,8 +181,9 @@
     margin-bottom: 50px
   .blog__post.main-blog__post
     width: 66%
-    img
-      height: 570px
+    margin-bottom: 0
+    .news-image
+      height: 515px;
   .blog__post
     width: 32%
     position: relative
@@ -168,8 +191,8 @@
     .news-date
      position: absolute
      z-index: 1
-     top: 5px
-     left: 5px
+     top: 10px
+     left: 10px
      padding: 8px
      background-color: rgba(0, 0, 0, 0.4);
      border-radius: 5px
@@ -191,10 +214,20 @@
       vertical-align: middle
       position: relative
       z-index: 10
-    img
+    .news-image
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      justify-content: center
+      overflow: hidden
       width: 100%
       height: 280px
       border-radius: 5px
+      img
+        align-self: center;
+
     .news-text-wrapper
       padding: 0 20px
       h3
@@ -209,16 +242,42 @@
         font-size: 14px
         color: #000
         text-decoration: none
-        border-bottom: 1px solid  #000
+        display: inline-block
         text-transform: uppercase
         font-weight: bold
+        position: relative
+        &:before
+          content: ""
+          position: absolute
+          width: 100%
+          height: 1px
+          bottom: 0
+          left: 0
+          background-color: #012265
+          visibility: hidden
+          -webkit-transform: scaleX(0)
+          transform: scaleX(0)
+          -webkit-transition: all 0.3s ease-in-out 0s
+          transition: all 0.3s ease-in-out 0s
+        &:hover:before
+          visibility: visible;
+          -webkit-transform: scaleX(1)
+          transform: scaleX(1)
         &:hover
          color: #012265
-         border-bottom: 1px solid  #012265
   .matches-info
     width: 32%
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: column
+    Justify-content: space-between
     p, h4
       font-family: 'RobotoLight'
+    .last-match
+      padding-left: 20px
     .next-match
       background-color: #012265
       border-radius: 5px
