@@ -1,0 +1,232 @@
+<template>
+    <div class="main-content">
+        <div id="carousel-wrapper">
+            <carousel-3d :autoplay="true" :autoplayTimeout="5000" :controls-visible="true">
+              <slide class="slide-a" :index="0">
+                  <div class="slider-info">
+                    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum minima, ea labore delectus quis.</p>
+                    <a href="">{{ readMore }}</a>
+                </div>
+            </slide>
+            <slide class="slide-b" :index="1">
+                <div class="slider-info">
+                    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quam consequuntur corporis rerum consequatur rem?</p>
+                    <a href="">{{ readMore }}</a>
+                </div>
+            </slide>
+            <slide class="slide-c" :index="2">
+                <div class="slider-info">
+                    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis numquam libero, quas? Tenetur ea, voluptatum!</p>
+                    <a href="">{{ readMore }}</a>
+                </div>
+            </slide>
+        </carousel-3d>
+    </div>
+
+    <div class="blog">
+        <div class="blog__post" v-bind:class="{ 'main-blog__post': post.status }" v-for="(post, index) in posts">
+          <div class="news-date">
+            <i class="ion-android-time"></i><span>{{ post.date }}</span>
+        </div>
+        <img :src="post.image" alt="">
+        <div class="news-text-wrapper ">
+            <h3 v-html="post.title">>{{ post.title }}</h3>
+            <p>{{ post.shortTitle }}</p>
+            <router-link :to="{ name: 'post', params: { id: index } }">{{ readMore }}</router-link>
+        </div>
+    </div>
+
+    <div class="matches-info">
+        <div class="last-match">
+            <h4>Последний матч:</h4>
+            <p v-html="textLM">{{ textLM }}</p>
+        </div>
+        <div class="next-match">
+            <h4><i class="ion-fireball"></i>Следующий матч:</h4>
+            <p v-html="textNM">{{ textNM }}</p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</template>
+
+<script>
+    import { Carousel3d, Slide } from 'vue-carousel-3d';
+
+    var posts = require('../posts')
+
+    export default {
+        name: 'carousel-wrapper',
+        components: {
+            'carousel-3d': Carousel3d,
+            'slide': Slide
+        },
+        data: function () {
+            return {
+                slides: 3,
+                textLM: '<p>Герта - Байер 2:6</p><p>Голы : 71 Вайзер, 86 Аллаги - 5 Эрнандес, 31 Хавертц, 45 Хавертц, 64 Кисслинг, 81 Арангис, 90 Похьянпало</p><p>Замены:</p><p>Желтые карточки : Аллан, Ибишевич, Дарида - Венделл</p><p>Красные карточки : - </p>',
+                textNM: '<p><i class="ion-ios-football-outline"></i>Герта – Хоффенхайм-1899</p><p><i class="ion-android-time"></i>22 ноября 2015 17:30<p><p><i class="ion-home"></i>Стадион Олимпияштадион</p>',
+                readMore: 'Читать дальше',
+                posts: posts
+            }
+        }
+    }
+</script>
+
+
+<style lang="sass?indentedSyntax=true">
+  .main-content
+    padding: 0 5%
+    margin-top: -200px
+
+  .carousel-3d-container
+    height: 100%!important
+
+  .carousel-3d-slider
+    width: 70%!important
+    height: 600px!important
+
+  .carousel-3d-slide
+    width: 100%!important
+    height: 100%!important
+
+  .carousel-3d-slide img
+    width: auto!important
+
+  .slide-a, .slide-b, .slide-c
+    text-align: center!important
+    .slider-info
+        position: absolute
+        bottom: 20px
+        left: 0
+        right: 0
+        width: 50%;
+        margin: 0 auto;
+        h1, p, a
+          color: #dfdfdf
+          position: relative
+          z-index: 10
+        h1
+          font-family: 'RobotoLight'
+          font-size: 36px
+        p
+          font-family: 'HelveticaReg'
+          font-size: 14px
+          padding: 0 20%
+        a
+          font-family: 'Courier'
+          font-size: 14px
+          text-transform: uppercase
+          text-decoration: none
+          font-weight: bold
+          border-bottom: 1px solid  #dfdfdf
+
+  .slide-a:after, .slide-b:after, .slide-c:after
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1
+
+  .slide-a
+    background-image: url('http://www.berliner-kurier.de/image/25174836/2x1/940/470/888cd22990f6830a04ee34f0949f76db/LC/hertha-mainz.jpg')
+  .slide-b
+    background-image: url('http://media.gettyimages.com/photos/peter-niemeyer-and-marcel-ndjeng-of-hertha-bsc-during-the-game-bsc-picture-id464763980')
+  .slide-c
+    background-image: url('http://media.gettyimages.com/photos/aenis-benhatira-salomon-kalou-and-marvin-plattenhardt-of-hertha-bsc-picture-id464763970')
+
+  .blog
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex;
+    flex-direction: row
+    align-items: stretch
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 50px
+  .blog__post.main-blog__post
+    width: 66%
+    img
+      height: 570px
+  .blog__post
+    width: 32%
+    position: relative
+    margin-bottom: 50px
+    .news-date
+     position: absolute
+     z-index: 1
+     top: 5px
+     left: 5px
+     padding: 8px
+     background-color: rgba(0, 0, 0, 0.4);
+     border-radius: 5px
+     color: #fff
+     span
+      font-family: 'Courier'
+      font-size: 12px
+      line-height: 12px
+      font-weight: bold
+      display: inline-block
+      vertical-align: middle
+      position: relative
+      z-index: 10
+     i
+      padding-right: 5px
+      font-size: 15px
+      line-height: 15px
+      display: inline-block
+      vertical-align: middle
+      position: relative
+      z-index: 10
+    img
+      width: 100%
+      height: 280px
+      border-radius: 5px
+    .news-text-wrapper
+      padding: 0 20px
+      h3
+        font-family: 'RobotoLight'
+        font-size: 24px
+      p
+        font-family: 'HelveticaReg'
+        font-size: 14px
+        color: #555
+      a
+        font-family: 'Courier'
+        font-size: 14px
+        color: #000
+        text-decoration: none
+        border-bottom: 1px solid  #000
+        text-transform: uppercase
+        font-weight: bold
+        &:hover
+         color: #012265
+         border-bottom: 1px solid  #012265
+  .matches-info
+    width: 32%
+    p, h4
+      font-family: 'RobotoLight'
+    .next-match
+      background-color: #012265
+      border-radius: 5px
+      color: #fff
+      padding: 50px
+      i
+        padding-right: 5px
+        font-size: 30px
+</style>
+
+

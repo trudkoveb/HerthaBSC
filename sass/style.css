@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Courier';
+  src: url("../fonts/courier/cour.ttf");
+  src: url("../fonts/courier/cour.woff2") format("woff2");
+  src: url("../fonts/courier/cour.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/roboto/roboto-light.ttf");
+  src: url("../fonts/roboto/roboto-light.woff2") format("woff2");
+  src: url("../fonts/roboto/roboto-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaReg';
+  src: url("../fonts/helvetica/helveticaregular.ttf");
+  src: url("../fonts/helvetica/helveticaregular.woff2") format("woff2");
+  src: url("../fonts/helvetica/helveticaregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  position: relative; }
+
+.app {
+  padding-bottom: 150px; }
+
+header {
+  background-color: #f4f4f4;
+  padding: 0 5%;
+  padding-bottom: 200px; }
+
+.header-top {
+  padding: 20px 5%;
+  margin: 0 -5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid  #e5e5e5; }
+
+.header-top-right a {
+  color: #5c5c5c;
+  margin-right: 13px;
+  text-decoration: none;
+  opacity: 1; }
+  .header-top-right a:hover {
+    opacity: 0.8; }
+  .header-top-right a span {
+    font-family: "Courier";
+    font-size: 11px; }
+
+.header-top-right input[type=text] {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  -webkit-box-shadow: 1px 2px 0 2px #ececec;
+  box-shadow: 1px 2px 0 2px #ececec;
+  margin-left: 21px;
+  margin-right: 28px;
+  height: 34px;
+  width: 140px;
+  font-size: 16px;
+  font-family: "HelveticaReg"; }
+
+.header-top-right input::-webkit-input-placeholder {
+  font-family: "Courier";
+  color: #9b9b9b;
+  font-size: 12px; }
+
+.header-top-right input::-moz-placeholder {
+  font-family: "Courier";
+  color: #9b9b9b;
+  font-size: 12px; }
+
+.header-top-right input:-moz-placeholder {
+  font-family: "Courier";
+  color: #9b9b9b;
+  font-size: 12px; }
+
+.header-top-right input:-ms-input-placeholder {
+  font-family: "Courier";
+  color: #9b9b9b;
+  font-size: 12px; }
+
+.header-logo {
+  text-align: center;
+  margin-top: -50px; }
+
+nav {
+  text-align: center;
+  padding: 30px 0; }
+  nav a {
+    font-family: "Courier";
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 50px;
+    color: #000; }
+
+.tags-search {
+  text-align: center; }
+  .tags-search a {
+    color: #6e6e6e;
+    text-decoration: none;
+    text-transform: lowercase; }
+    .tags-search a:hover {
+      color: #012265; }
+    .tags-search a:before {
+      content: '#';
+      display: inline-block;
+      margin-left: 29px; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #000;
+  font-family: "Courier";
+  font-weight: 900;
+  padding-bottom: 50px; }
+  footer p:nth-of-type(1) {
+    font-size: 14px;
+    margin-bottom: 0; }
+  footer p:nth-of-type(2) {
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 5px; }
+  footer a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 5px; }
+    footer a:last-child {
+      margin-right: 0;
+      opacity: 1; }
+    footer a:hover {
+      opacity: 0.4; }
