@@ -184,6 +184,11 @@
     margin-bottom: 0
     .news-image
       height: 515px;
+      img:hover
+        -webkit-transform: scale(1.2)
+        -ms-transform: scale(1.2)
+        transform: scale(1.2)
+
   .blog__post
     width: 32%
     position: relative
@@ -227,6 +232,14 @@
       border-radius: 5px
       img
         align-self: center;
+        -webkit-transition: -webkit-transform .9s ease-out;
+        transition: -webkit-transform .9s ease-out;
+        transition: transform .9s ease-out;
+        transition: transform .9s ease-out, -webkit-transform .9s ease-out;
+        &:hover
+         -webkit-transform: scale(0.8)
+         -ms-transform: scale(0.8)
+         transform: scale(0.8)
 
     .news-text-wrapper
       padding: 0 20px
