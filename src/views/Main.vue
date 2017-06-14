@@ -1,94 +1,86 @@
 <template>
-    <div class="main-content">
-        <div id="carousel-wrapper">
-            <carousel-3d :autoplay="true" :autoplayTimeout="5000" :controls-visible="true">
-              <slide class="slide-a" :index="0">
-                  <div class="slider-info">
-                    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum minima, ea labore delectus quis.</p>
-                    <a href="">{{ readMore }}</a>
-                </div>
-            </slide>
-            <slide class="slide-b" :index="1">
-                <div class="slider-info">
-                    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quam consequuntur corporis rerum consequatur rem?</p>
-                    <a href="">{{ readMore }}</a>
-                </div>
-            </slide>
-            <slide class="slide-c" :index="2">
-                <div class="slider-info">
-                    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis numquam libero, quas? Tenetur ea, voluptatum!</p>
-                    <a href="">{{ readMore }}</a>
-                </div>
-            </slide>
-        </carousel-3d>
+  <div class="main-content">
+    <div id="carousel-wrapper">
+      <carousel-3d :autoplay="true" :autoplayTimeout="5000" :controls-visible="true">
+        <slide class="slide-a" :index="0">
+          <div class="slider-info">
+            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum minima, ea labore delectus quis.</p>
+            <a href="">{{ readMore }}</a>
+          </div>
+        </slide>
+        <slide class="slide-b" :index="1">
+          <div class="slider-info">
+            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quam consequuntur corporis rerum consequatur rem?</p>
+            <a href="">{{ readMore }}</a>
+          </div>
+        </slide>
+        <slide class="slide-c" :index="2">
+          <div class="slider-info">
+            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis numquam libero, quas? Tenetur ea, voluptatum!</p>
+            <a href="">{{ readMore }}</a>
+          </div>
+        </slide>
+      </carousel-3d>
     </div>
 
     <div class="blog">
-        <div class="blog__post" v-bind:class="{ 'main-blog__post': post.status }" v-for="(post, index) in posts">
-          <div class="news-date">
-            <i class="ion-android-time"></i><span>{{ post.date }}</span>
+      <div class="blog__post" v-bind:class="{ 'main-blog__post': post.status }" v-for="(post, index) in posts">
+        <div class="news-date">
+          <i class="ion-android-time"></i><span>{{ post.date }}</span>
         </div>
         <div class="news-image">
           <img :src="post.image" alt="">
         </div>
         <div class="news-text-wrapper ">
-            <h3 v-html="post.title">>{{ post.title }}</h3>
-            <p>{{ post.shortTitle }}</p>
-            <router-link :to="{ name: 'post', params: { id: index } }">{{ readMore }}</router-link>
+          <h3 v-html="post.title">>{{ post.title }}</h3>
+          <p>{{ post.shortTitle }}</p>
+          <router-link :to="{ name: 'post', params: { id: index } }">{{ readMore }}</router-link>
         </div>
-    </div>
+      </div>
 
-    <div class="matches-info">
+      <div class="matches-info">
         <div class="last-match">
-            <h4>Последний матч:</h4>
-            <p v-html="textLM">{{ textLM }}</p>
+          <h4>Последний матч:</h4>
+          <p v-html="textLM">{{ textLM }}</p>
         </div>
         <div class="next-match">
-            <h4><i class="ion-fireball"></i>Следующий матч:</h4>
-            <p v-html="textNM">{{ textNM }}</p>
+          <h4><i class="ion-fireball"></i>Следующий матч:</h4>
+          <p v-html="textNM">{{ textNM }}</p>
         </div>
+      </div>
+
     </div>
 
-</div>
-
-</div>
+  </div>
 </template>
 
 <script>
-    import { Carousel3d, Slide } from 'vue-carousel-3d';
+  import { Carousel3d, Slide } from 'vue-carousel-3d';
 
-    var posts = require('../posts')
+  var posts = require('../posts')
 
-    export default {
-        name: 'carousel-wrapper',
-        components: {
-            'carousel-3d': Carousel3d,
-            'slide': Slide
-        },
-        data: function () {
-            return {
-                slides: 3,
-                textLM: '<p>Герта - Байер 2:6</p><p>Голы : 71 Вайзер, 86 Аллаги - 5 Эрнандес, 31 Хавертц, 45 Хавертц, 64 Кисслинг, 81 Арангис, 90 Похьянпало</p><p>Замены:</p><p>Желтые карточки : Аллан, Ибишевич, Дарида - Венделл</p><p>Красные карточки : - </p>',
-                textNM: '<p><i class="ion-ios-football-outline"></i>Герта – Хоффенхайм-1899</p><p><i class="ion-android-time"></i>22 ноября 2015 17:30<p><p><i class="ion-home"></i>Стадион Олимпияштадион</p>',
-                readMore: 'Читать дальше',
-                posts: posts
-            }
-        }
+  export default {
+    name: 'carousel-wrapper',
+    components: {
+      'carousel-3d': Carousel3d,
+      'slide': Slide
+    },
+    data: function () {
+      return {
+        slides: 3,
+        textLM: '<p>Герта - Байер 2:6</p><p>Голы : 71 Вайзер, 86 Аллаги - 5 Эрнандес, 31 Хавертц, 45 Хавертц, 64 Кисслинг, 81 Арангис, 90 Похьянпало</p><p>Замены:</p><p>Желтые карточки : Аллан, Ибишевич, Дарида - Венделл</p><p>Красные карточки : - </p>',
+        textNM: '<p><i class="ion-ios-football-outline"></i>Герта – Хоффенхайм-1899</p><p><i class="ion-android-time"></i>22 ноября 2015 17:30<p><p><i class="ion-home"></i>Стадион Олимпияштадион</p>',
+        readMore: 'Читать дальше',
+        posts: posts
+      }
     }
+  }
 </script>
 
-
 <style lang="sass?indentedSyntax=true">
-  .main-content
-    padding: 0 5%
-    width: 1180px
-    margin: 0 auto
-    margin-bottom: 50px
-    margin-top: -180px
-
   .carousel-3d-container
     height: 100%!important
     margin: 0!important
@@ -302,5 +294,8 @@
         padding-right: 5px
         font-size: 30px
 </style>
+
+
+
 
 
