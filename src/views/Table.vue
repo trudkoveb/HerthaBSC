@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class="main-content")
-    div
+    div.bundesliga-table-wrapper
       input(type="text", v-model="search", autofocus, style="display: none")
       table(class="bundesliga-table")
         thead
@@ -22,9 +22,9 @@
             th
               | Разница
         tbody
-          tr(v-for="club in orderBy(clubs, 'points', -1)")
+          tr(v-for="club in orderBy(clubs, 'points', -1)", v-bind:class="{ 'hertha-color': club.status }")
             td
-            td(v-bind:class="{ 'hertha-color': club.status }")
+            td
               | {{ club.name }}
             td
               | {{ club.matches }}
@@ -253,14 +253,20 @@
 </script>
 
 <style lang="sass?indentedSyntax=true">
-  .bundesliga-table
+  .bundesliga-table-wrapper
     width: 100%
-    counter-reset: list 0
-    tbody
-      tr
-        td:first-child:before
-          counter-increment: list
-          content: counter(list)
-  .hertha-color
-    color: #0058a3
+    padding: 40px
+    -webkit-box-shadow: 1px 1px 4px 2px #030303;
+    box-shadow: 1px 1px 4px 2px #030303;
+    background-color: #f3f3f3
+    .bundesliga-table
+      width: 80%
+      counter-reset: list 0
+      tbody
+        tr
+          td:first-child:before
+            counter-increment: list
+            content: counter(list)
+    .hertha-color
+      color: #0058a3
 </style>

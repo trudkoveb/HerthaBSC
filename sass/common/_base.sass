@@ -1,0 +1,49 @@
+html, body
+  height: 100%
+
+body
+  $font-text-color: #000
+
+table
+  text-align: center
+  width: 70%
+  margin: 0 auto
+  border-collapse: collapse
+  background-color: #fff
+  tr
+    border-top: 1px solid  #ccc
+    border-bottom: 1px solid  #ccc
+  thead
+    th
+      font-family: 'RobotoLight'
+      font-size: 17px
+      padding: 10px 0
+  tbody
+    tr
+      &:hover
+        background-color: $light-grey
+      td
+        font-family: 'HelveticaReg'
+        font-size: 14px
+        padding: 10px 0
+        &:first-child
+          font-weight: bold
+
+.wrapper
+  min-height: 100%
+  position: relative
+
+.app
+  padding-bottom: 150px
+
+.main-content
+  padding: 0 5%
+  width: 1180px
+  margin: 0 auto
+  margin-bottom: 50px
+  margin-top: -180px
+
+
+// Common classes
+.bold
+  font-weight: bold
