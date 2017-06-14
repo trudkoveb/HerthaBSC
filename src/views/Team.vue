@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="margin-top-30 main-content")
+  div(class="main-content")
     table(class="team-table")
       thead
         tr
@@ -19,14 +19,20 @@
             | Вес
       tbody
         tr(v-for="player in players")
-          td {{ player.number }}
-          td {{ player.name }}
+          td
+            | {{ player.number }}
+          td
+            | {{ player.name }}
           td
             img(v-bind:src="player.image")
-          td {{ player.position }}
-          td {{ player.age }}
-          td {{ player.height }}
-          td {{ player.weight }}
+          td
+            | {{ player.position }}
+          td
+            | {{ player.age }}
+          td
+            | {{ player.height }}
+          td
+            | {{ player.weight }}
 </template>
 
 <script>
@@ -284,22 +290,5 @@
 </script>
 
 <style lang="sass?indentedSyntax=true">
-  table.team-table
-    width: 70%
-    margin: 0 auto
-    border-collapse: collapse
-    thead
-      th
-        font-family: 'RobotoLight'
-        font-size: 17px
-        border: 1px solid  #000
-        padding: 10px 0
-    tbody
-      td
-        font-family: 'HelveticaReg'
-        font-size: 14px
-        padding: 10px 0
-        border: 1px solid  #000
-        &:first-child
-          font-weight: bold
+
 </style>
