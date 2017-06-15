@@ -68,10 +68,10 @@ table {
   transition: all .3s ease; }
 
 .slide-fade-leave-active {
-  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1); }
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1); }
 
-.slide-fade-enter, .slide-fade-leave-active {
-  padding-left: 10px;
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(200px);
   opacity: 0; }
 
 .header-wrapper {
