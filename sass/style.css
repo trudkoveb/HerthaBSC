@@ -64,6 +64,16 @@ table {
 .bold {
   font-weight: bold; }
 
+.slide-fade-enter-active {
+  transition: all .3s ease; }
+
+.slide-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1); }
+
+.slide-fade-enter, .slide-fade-leave-active {
+  padding-left: 10px;
+  opacity: 0; }
+
 .header-wrapper {
   background-color: #f4f4f4; }
 
