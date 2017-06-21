@@ -18,54 +18,28 @@
           th
             | Вес
       tbody
-        tr(v-for="goalkeeper in goalkeepers")
+        tr(v-for="player in players")
           td
-            | {{ goalkeeper.number }}
+            | {{ player.number }}
           td
-            | {{ goalkeeper.name }}
+            | {{ player.name }}
           td
-            img(v-bind:src="goalkeeper.image")
+            img(v-bind:src="player.image")
           td
-            | {{ goalkeeper.position }}
+            | {{ player.position }}
           td
-            | {{ goalkeeper.age }}
+            | {{ player.age }}
           td
-            | {{ goalkeeper.height }}
+            | {{ player.height }}
           td
-            | {{ goalkeeper.weight }}
-    table(class="team-table")
-      thead
-        tr
-          th
-          th
-          th
-          th
-          th
-          th
-          th
-      tbody
-        tr(v-for="defender in defenders")
-          td
-            | {{ defender.number }}
-          td
-            | {{ defender.name }}
-          td
-            img(v-bind:src="defender.image")
-          td
-            | {{ defender.position }}
-          td
-            | {{ defender.age }}
-          td
-            | {{ defender.height }}
-          td
-            | {{ defender.weight }}
+            | {{ player.weight }}
 </template>
 
 <script>
   module.exports = {
     data: function () {
       return {
-        goalkeepers: [
+        players: [
           {
             number: '1',
             name: 'Томас Крафт',
@@ -101,9 +75,7 @@
             age: '22',
             height: '187',
             weight: '80'
-          }
-          ],
-          defenders: [
+          },
           {
             number: '25',
             name: 'Джон Брукс',
@@ -166,9 +138,7 @@
             age: '28',
             height: '190',
             weight: '85'
-          }
-          ],
-          midfielders: [
+          },
           {
             number: '14',
             name: 'Валентин Штокер',
@@ -285,9 +255,7 @@
             age: '22',
             height: '173',
             weight: '69'
-          }
-          ],
-          strikers: [
+          },
           {
             number: '8',
             name: 'Саломон Калу',
