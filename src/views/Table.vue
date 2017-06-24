@@ -267,6 +267,30 @@
           td:first-child:before
             counter-increment: list
             content: counter(list)
+        tr:first-child, tr:nth-child(2), tr:nth-child(3), tr:nth-child(4), tr:nth-child(5), tr:nth-child(6), tr:nth-child(16), tr:nth-child(17), tr:last-child
+            td:first-child
+              position: relative
+              &:after
+                content:  ''
+                display: block
+                height: 100%
+                width: 10px
+                background-color: green
+                position: absolute
+                top: 0
+                left: -10px
+        tr:nth-child(4)
+            td:first-child:after
+                background-color: lightgreen
+        tr:nth-child(5), tr:nth-child(6)
+            td:first-child:after
+                background-color: blue
+        tr:last-child, tr:nth-child(17)
+            td:first-child:after
+                background-color: red
+        tr:nth-child(16)
+            td:first-child:after
+                background-color: orange
     .hertha-color
       color: #0058a3
 </style>
