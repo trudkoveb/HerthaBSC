@@ -25,27 +25,33 @@
 html, body {
   height: 100%; }
 
-table {
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background-color: #fff; }
-  table tr {
-    border-top: 1px solid  #ccc;
-    border-bottom: 1px solid  #ccc; }
-  table thead th {
-    font-family: 'RobotoLight';
-    font-size: 17px;
-    padding: 10px 0; }
-  table tbody tr:hover {
-    background-color: #f4f4f4; }
-  table tbody tr td {
-    font-family: 'HelveticaReg';
-    font-size: 14px;
-    padding: 10px 0; }
-    table tbody tr td:first-child {
-      font-weight: bold; }
+.table-wrapper {
+  width: 100%;
+  padding: 40px;
+  -webkit-box-shadow: 1px 1px 4px 2px #030303;
+  box-shadow: 1px 1px 4px 2px #030303;
+  background-color: #f3f3f3; }
+  .table-wrapper table {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff; }
+    .table-wrapper table tr {
+      border-top: 1px solid  #ccc;
+      border-bottom: 1px solid  #ccc; }
+    .table-wrapper table thead th {
+      font-family: 'RobotoLight';
+      font-size: 17px;
+      padding: 10px 0; }
+    .table-wrapper table tbody tr:hover {
+      background-color: #f4f4f4; }
+    .table-wrapper table tbody tr td {
+      font-family: 'HelveticaReg';
+      font-size: 14px;
+      padding: 10px 0; }
+      .table-wrapper table tbody tr td:first-child {
+        font-weight: bold; }
 
 .wrapper {
   min-height: 100%;

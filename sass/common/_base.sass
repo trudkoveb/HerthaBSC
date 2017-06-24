@@ -4,30 +4,36 @@ html, body
 body
   $font-text-color: #000
 
-table
-  text-align: center
-  width: 70%
-  margin: 0 auto
-  border-collapse: collapse
-  background-color: #fff
-  tr
-    border-top: 1px solid  #ccc
-    border-bottom: 1px solid  #ccc
-  thead
-    th
-      font-family: 'RobotoLight'
-      font-size: 17px
-      padding: 10px 0
-  tbody
+.table-wrapper
+  width: 100%
+  padding: 40px
+  -webkit-box-shadow: 1px 1px 4px 2px #030303;
+  box-shadow: 1px 1px 4px 2px #030303;
+  background-color: #f3f3f3
+  table
+    text-align: center
+    width: 70%
+    margin: 0 auto
+    border-collapse: collapse
+    background-color: #fff
     tr
-      &:hover
-        background-color: $light-grey
-      td
-        font-family: 'HelveticaReg'
-        font-size: 14px
+      border-top: 1px solid  #ccc
+      border-bottom: 1px solid  #ccc
+    thead
+      th
+        font-family: 'RobotoLight'
+        font-size: 17px
         padding: 10px 0
-        &:first-child
-          font-weight: bold
+    tbody
+      tr
+        &:hover
+          background-color: $light-grey
+        td
+          font-family: 'HelveticaReg'
+          font-size: 14px
+          padding: 10px 0
+          &:first-child
+            font-weight: bold
 
 .wrapper
   min-height: 100%

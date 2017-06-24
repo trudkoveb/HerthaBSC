@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class="main-content")
-    div.bundesliga-table-wrapper
+    div.table-wrapper
       input(type="text", v-model="search", autofocus, style="display: none")
       table(class="bundesliga-table")
         thead
@@ -253,12 +253,6 @@
 </script>
 
 <style lang="sass?indentedSyntax=true">
-  .bundesliga-table-wrapper
-    width: 100%
-    padding: 40px
-    -webkit-box-shadow: 1px 1px 4px 2px #030303;
-    box-shadow: 1px 1px 4px 2px #030303;
-    background-color: #f3f3f3
     .bundesliga-table
       width: 80%
       counter-reset: list 0

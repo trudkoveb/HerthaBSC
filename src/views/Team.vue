@@ -1,38 +1,39 @@
 <template lang="pug">
   div(class="main-content")
-    table(class="team-table")
-      thead
-        tr
-          th
-            | Номер
-          th
-            | Игрок
-          th
-            |
-          th
-            | Амплуа
-          th
-            | Возраст
-          th
-            | Рост
-          th
-            | Вес
-      tbody
-        tr(v-for="player in players")
-          td
-            | {{ player.number }}
-          td
-            | {{ player.name }}
-          td
-            img(v-bind:src="player.image")
-          td
-            | {{ player.position }}
-          td
-            | {{ player.age }}
-          td
-            | {{ player.height }}
-          td
-            | {{ player.weight }}
+    div.table-wrapper
+      table(class="team-table")
+        thead
+          tr
+            th
+              | Номер
+            th
+              | Игрок
+            th
+              |
+            th
+              | Амплуа
+            th
+              | Возраст
+            th
+              | Рост
+            th
+              | Вес
+        tbody
+          tr(v-for="player in players")
+            td
+              | {{ player.number }}
+            td
+              | {{ player.name }}
+            td
+              img(v-bind:src="player.image")
+            td
+              | {{ player.position }}
+            td
+              | {{ player.age }}
+            td
+              | {{ player.height }}
+            td
+              | {{ player.weight }}
 </template>
 
 <script>
