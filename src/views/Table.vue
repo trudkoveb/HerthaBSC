@@ -40,6 +40,18 @@
               | {{ club.goals }}
             td
               | {{ club.difference }}
+    div.place-description
+      ul
+        li
+          | Лига Чемпионов
+        li
+          | Квалификация Лиги Чемпионов
+        li
+          | Лига Европы
+        li
+          | Плей-офф за вылет
+        li
+          | Вылет
 </template>
 
 <script>
@@ -49,7 +61,7 @@
         search: '',
         clubs: [
         {
-          name: 'Hertha BSC',
+          name: 'Герта',
           matches: '34',
           points: '49',
           status: true,
@@ -60,7 +72,7 @@
           difference: '-4'
         },
         {
-          name: 'FC Bayern München',
+          name: 'Бавария',
           matches: '34',
           points: '82',
           status: false,
@@ -71,7 +83,7 @@
           difference: '+67'
         },
         {
-          name: 'RB Leipzig',
+          name: 'РБ Лейпциг',
           matches: '34',
           points: '67',
           status: false,
@@ -82,7 +94,7 @@
           difference: '+27'
         },
         {
-          name: 'Borussia Dortmund',
+          name: 'Боруссия Д',
           matches: '34',
           points: '64',
           status: false,
@@ -93,7 +105,7 @@
           difference: '+32'
         },
         {
-          name: 'TSG 1899 Hoffenheim',
+          name: 'Хоффенхайм-1899',
           matches: '34',
           points: '62',
           status: false,
@@ -104,7 +116,7 @@
           difference: '+27'
         },
         {
-          name: '1. FC Köln',
+          name: 'Кельн',
           matches: '34',
           points: '49',
           status: false,
@@ -115,7 +127,7 @@
           difference: '+9'
         },
         {
-          name: 'Sport-Club Freiburg',
+          name: 'Фрайбург',
           matches: '34',
           points: '48',
           status: false,
@@ -126,7 +138,7 @@
           difference: '-18'
         },
         {
-          name: 'SV Werder Bremen',
+          name: 'Вердер',
           matches: '34',
           points: '45',
           status: false,
@@ -137,7 +149,7 @@
           difference: '-3'
         },
         {
-          name: 'Borussia Mönchengladbach',
+          name: 'Боруссия М',
           matches: '34',
           points: '45',
           status: false,
@@ -148,7 +160,7 @@
           difference: '-4'
         },
         {
-          name: 'FC Schalke 04',
+          name: 'Шальке-04',
           matches: '34',
           points: '43',
           status: false,
@@ -159,7 +171,7 @@
           difference: '+5'
         },
         {
-          name: 'Eintracht Frankfurt',
+          name: 'Айнтрахт',
           matches: '34',
           points: '42',
           status: false,
@@ -170,7 +182,7 @@
           difference: '-7'
         },
         {
-          name: 'Bayer 04 Leverkusen',
+          name: 'Байер',
           matches: '34',
           points: '41',
           status: false,
@@ -181,7 +193,7 @@
           difference: '-2'
         },
         {
-          name: 'FC Augsburg',
+          name: 'Аугсбург',
           matches: '34',
           points: '38',
           status: false,
@@ -192,7 +204,7 @@
           difference: '-16'
         },
         {
-          name: 'Hamburger SV',
+          name: 'Гамбург',
           matches: '34',
           points: '38',
           status: false,
@@ -203,7 +215,7 @@
           difference: '-28'
         },
         {
-          name: '1. FSV Mainz 05',
+          name: 'Майнц',
           matches: '34',
           points: '37',
           status: false,
@@ -214,7 +226,7 @@
           difference: '-11'
         },
         {
-          name: 'VfL Wolfsburg',
+          name: 'Вольфсбург',
           matches: '34',
           points: '37',
           status: false,
@@ -225,7 +237,7 @@
           difference: '-18'
         },
         {
-          name: 'FC Ingolstadt 04',
+          name: 'Ингольштадт',
           matches: '34',
           points: '32',
           status: false,
@@ -236,7 +248,7 @@
           difference: '-21'
         },
         {
-          name: 'SV Darmstadt 98',
+          name: 'Дармштадт',
           matches: '34',
           points: '25',
           status: false,
@@ -268,23 +280,51 @@
                 content:  ''
                 display: block
                 height: 100%
-                width: 10px
-                background-color: green
+                width: 6px
+                background-color: #009000
                 position: absolute
                 top: 0
-                left: -10px
+                left: -6px
         tr:nth-child(4)
             td:first-child:after
-                background-color: lightgreen
+                background-color: #00c300
         tr:nth-child(5), tr:nth-child(6)
             td:first-child:after
-                background-color: blue
-        tr:last-child, tr:nth-child(17)
-            td:first-child:after
-                background-color: red
+                background-color: #31b0d5
         tr:nth-child(16)
             td:first-child:after
-                background-color: orange
+                background-color: #f0ad4e
+        tr:last-child, tr:nth-child(17)
+            td:first-child:after
+                background-color: #d9534f
     .hertha-color
       color: #0058a3
+    .place-description
+      text-align: center
+      padding: 30px 0
+      ul
+        li
+          display: inline-block
+          position: relative
+          margin-right: 30px
+          &:last-child
+            margin-right: 0
+          &:after
+            content:  ''
+            display: block
+            height: 30px
+            width: 6px
+            position: absolute
+            top: -7px
+            left: -10px
+          &:first-child:after
+            background-color: #009000
+          &:nth-child(2):after
+            background-color: #00c300
+          &:nth-child(3):after
+            background-color: #31b0d5
+          &:nth-child(4):after
+            background-color: #f0ad4e
+          &:last-child:after
+            background-color: #d9534f
 </style>
