@@ -31,6 +31,9 @@
           slide(class="slide-a", :index="0")
           slide(class="slide-b" :index="1")
           slide(class="slide-c" :index="2")
+          slide(class="slide-d" :index="3")
+          slide(class="slide-e" :index="4")
+          slide(class="slide-f" :index="5")
       div(class="history-text")
         h2
           | История ФК Герта:
@@ -38,10 +41,10 @@
           | История футбольного клуба Герта начинается 25 июля 1892 года, когда команда еще называлась
           span(class="bold")  БФК Герта 92
           | . Клуб основал молодой юноша со своими друзьями, а название для команды он придумал благодаря пароходу, на котором когда-то плавал со своим отцом. У этого парохода была бело-синяя дымовая труба, и её окрас был позаимствованы друзьями как цвета клуба. Так же существует история, что название Герта происходит от слова Nerthus, которое в древнегерманской мифологии означает Богиню плодородия. Прозвищем команды еще с самого начала стало такое же прозвище, как и у футбольного клуба Ювентус – Старая синьора (Die Alte Dame). Первый успех пришёл в команду в 1906 году – «Герта» выиграла чемпионат Берлина.
+          img(class="float-right", src="../../img/pictures/history/hertha.jpg")
           p
             | После Первой мировой войны команда испытывала финансовые трудности и, чтобы решить их, была вынуждена объединиться со спортивным клубом «Берлинер» в 1920 году и именно тогда команда
             span(class="bold")  получила приставку BSC к своему названию.
-          img(class="float-right", src="../../img/pictures/history/hertha.jpg")
           p
             | В период с 1926 по 1930 годы включительно клуб шесть раз становился финалистом чемпионата Германии, а в
             span(class="bold")  1930 и 1931 годах ему всё же удалось завоевывать чемпионский титул
@@ -89,7 +92,6 @@
             | В следующем сезоне столичные футболисты поднимают планку - четвертое место и очередное участие в Кубке Уефа. К сожалению, в Кубке Уефа 2001/2002 Герта вылетела на том же этапе, что и в прошлом году : на этот раз сильнее оказался ФК Серветт.
           p
             | В сезоне 2002/2003 Герта продолжает радовать фанатов - пятое место и очередная квалификация в кубок уефа. Так же Герта стремится к победе в Кубке Уефа, но в 1\8 финале в драматическом противостояние с Боавиштой вылетает из-за правила выездного гола (3:2 дома и 0:1 в гостях).
-          img(class="float-right", src="../../img/pictures/history/hertha-90.jpg", width='50%')
           p
             | Единственным черным пятном за это время для команды становится сезон 2003/2004 : в национальном чемпионате Герта занимает лишь 12 место, а Кубок УЕФА оказался для берлинцев настоящим позором : клуб вылетел в первом раунде, проиграв польскому Гроцлину.
           p
@@ -100,7 +102,7 @@
             | 2005/2006 - шестое место и кубок Интертото. Сезон в Европе 2005/2006 получается достаточно успешным для Герты. Клуб без проблем проходит в групповой этап, в котором занимает третье место, не потерпев ни одного поражения, но в 1\16 финала неожиданно уступает Рапиду.
           p
             | В следующем сезоне команда занимает только 10 место в Бундеслиге, а в Кубке Уефа столичные футболисты продолжили неприятно удивлять своих фанатов, довольно быстро вылетев на предварительных раундах.
-          img(class="float-right", src="../../img/pictures/history/HQjoidZMmgk.jpg", width='50%')
+          img(class="float-left", src="../../img/pictures/history/HQjoidZMmgk.jpg", width='50%')
           p
             | 2007/2008 - 10 место, но Герта квалифицировался в кубок УЕФА как победитель соревнования Fair Play.
           p
@@ -146,11 +148,17 @@
       .carousel-3d-slide img
         width: auto!important
       .slide-a
-        background-image: url('http://www.berliner-kurier.de/image/25174836/2x1/940/470/888cd22990f6830a04ee34f0949f76db/LC/hertha-mainz.jpg')
+        background-image: url('../../img/pictures/history/3-format43.jpg')
       .slide-b
-        background-image: url('http://media.gettyimages.com/photos/peter-niemeyer-and-marcel-ndjeng-of-hertha-bsc-during-the-game-bsc-picture-id464763980')
+        background-image: url('../../img/pictures/history/hertha-90.jpg')
       .slide-c
-        background-image: url('http://media.gettyimages.com/photos/aenis-benhatira-salomon-kalou-and-marvin-plattenhardt-of-hertha-bsc-picture-id464763970')
+        background-image: url('../../img/pictures/history/hertha_1472484707.jpg')
+      .slide-d
+        background-image: url('../../img/pictures/history/hertha-schalke-130-_v-gseagaleriexl.jpg')
+      .slide-e
+        background-image: url('../../img/pictures/history/I27uG-nkk3k.jpg')
+      .slide-f
+        background-image: url('../../img/pictures/history/NAkK0eObi18.jpg')
 
       .history-info
         p
