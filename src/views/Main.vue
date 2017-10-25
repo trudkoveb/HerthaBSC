@@ -27,7 +27,7 @@
     </div>
 
     <div class="blog">
-      <div class="blog__post" v-bind:class="{ 'main-blog__post': post.status }" v-for="(post, index) in posts">
+      <div class="blog__post" v-bind:class="{ 'main-blog__post': post.status }" v-for="(post, index) in posts" :post="post" v-if="index < limit">
         <div class="news-date">
           <i class="ion-android-time"></i><span>{{ post.date }}</span>
         </div>
@@ -40,8 +40,7 @@
           <router-link :to="{ name: 'post', params: { id: index } }">{{ readMore }}</router-link>
         </div>
       </div>
-
-      <div class="matches-info">
+       <div class="matches-info">
         <div class="last-match">
           <h4>Последний матч:</h4>
           <p v-html="textLM">{{ textLM }}</p>
@@ -51,8 +50,8 @@
           <p v-html="textNM">{{ textNM }}</p>
         </div>
       </div>
-
     </div>
+    <button @click="limit += 2">Show more</button>
 
   </div>
 </template>
@@ -74,7 +73,8 @@
         textLM: '<p>Герта - Байер 2:6</p><p>Голы : 71 Вайзер, 86 Аллаги - 5 Эрнандес, 31 Хавертц, 45 Хавертц, 64 Кисслинг, 81 Арангис, 90 Похьянпало</p><p>Замены:</p><p>Желтые карточки : Аллан, Ибишевич, Дарида - Венделл</p><p>Красные карточки : - </p>',
         textNM: '<p><i class="ion-ios-football-outline"></i>Герта – Хоффенхайм-1899</p><p><i class="ion-android-time"></i>22 ноября 2015 17:30<p><p><i class="ion-home"></i>Стадион Олимпияштадион</p>',
         readMore: 'Читать дальше',
-        posts: posts
+        posts: posts,
+        limit: 2
       }
     }
   }
@@ -173,6 +173,7 @@
     align-items: stretch
     justify-content: space-between
     flex-wrap: wrap
+    position: relative
   .blog__post.main-blog__post
     width: 66%
     margin-bottom: 0
@@ -187,6 +188,10 @@
     width: 32%
     position: relative
     margin-bottom: 50px
+    &:nth-child(2)
+      margin-right: 34%
+    &:nth-child(5)
+      margin-top: 32%
     .news-date
      position: absolute
      z-index: 1
@@ -281,6 +286,9 @@
     display: flex
     flex-direction: column
     Justify-content: space-between
+    position: absolute;
+    right: 0;
+    top: 0;
     p, h4
       font-family: 'RobotoLight'
     .last-match
