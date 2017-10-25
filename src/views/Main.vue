@@ -26,6 +26,24 @@
       </carousel-3d>
     </div>
 
+    <div class="matches-info">
+      <div class="last-match">
+        <p>Фрайбург - Герта 1:1</p>
+        <p><span>Голы :</span> 51' Хаберер - 81' Калу (п)</p>
+        <p><span>Замены :<br></span><i class="ion-arrow-down-a"></i>Хаберер, Террацино, Линхарт<i class="ion-arrow-up-a"></i>Петерсен, Кат, Кох<br>
+          <i class="ion-arrow-down-a"></i>Ибишевич, Дуда, Лустенбергер<i class="ion-arrow-up-a"></i>Зельке, Лазаро, Майер
+        </p>
+        <p><span>Желтые карточки :</span> Нидерлехнер, Хаберер, Сеюнджю, Линхарт - Лекки, Ибишевич, Штарк</p>
+        <p><span>Красные карточки :</span> - </p>
+      </div>
+      <div class="next-match">
+        <h4><i class="ion-fireball"></i>Следующий матч:</h4>
+        <p><i class="ion-ios-football-outline"></i>Герта – Гамбург</p>
+        <p><i class="ion-android-time"></i>28 октября 2017 16:30<p>
+        <p><i class="ion-home"></i>Стадион Олимпияштадион</p>
+      </div>
+    </div>
+
     <div class="blog">
       <div class="blog__post" v-bind:class="{ 'main-blog__post': post.status }" v-for="(post, index) in posts" :post="post" v-if="index < limit">
         <div class="news-date">
@@ -40,18 +58,8 @@
           <router-link :to="{ name: 'post', params: { id: index } }">{{ readMore }}</router-link>
         </div>
       </div>
-       <div class="matches-info">
-        <div class="last-match">
-          <h4>Последний матч:</h4>
-          <p v-html="textLM">{{ textLM }}</p>
-        </div>
-        <div class="next-match">
-          <h4><i class="ion-fireball"></i>Следующий матч:</h4>
-          <p v-html="textNM">{{ textNM }}</p>
-        </div>
-      </div>
     </div>
-    <button @click="limit += 2">Show more</button>
+    <button class="more-news-btn" @click="limit += 3">Показать еще</button>
 
   </div>
 </template>
@@ -70,11 +78,9 @@
     data: function () {
       return {
         slides: 3,
-        textLM: '<p>Герта - Байер 2:6</p><p>Голы : 71 Вайзер, 86 Аллаги - 5 Эрнандес, 31 Хавертц, 45 Хавертц, 64 Кисслинг, 81 Арангис, 90 Похьянпало</p><p>Замены:</p><p>Желтые карточки : Аллан, Ибишевич, Дарида - Венделл</p><p>Красные карточки : - </p>',
-        textNM: '<p><i class="ion-ios-football-outline"></i>Герта – Хоффенхайм-1899</p><p><i class="ion-android-time"></i>22 ноября 2015 17:30<p><p><i class="ion-home"></i>Стадион Олимпияштадион</p>',
         readMore: 'Читать дальше',
         posts: posts,
-        limit: 2
+        limit: 5
       }
     }
   }
@@ -163,6 +169,45 @@
   .slide-c
     background-image: url('http://media.gettyimages.com/photos/aenis-benhatira-salomon-kalou-and-marvin-plattenhardt-of-hertha-bsc-picture-id464763970')
 
+  .matches-info
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 25px
+    p, h4
+      font-family: 'RobotoLight'
+    .last-match
+      padding-left: 20px
+      width: 70%
+      p
+        &:nth-of-type(1)
+          font-size: 20px
+          font-weight: bold
+        span
+          font-weight: bold
+        i
+          margin-right: 5px
+          &.ion-arrow-down-a
+            color: red
+          &.ion-arrow-up-a
+            color: green
+            margin-left: 5px
+    .next-match
+      width: 25%;
+      margin-right: 0.5%;
+      background-color: #012265
+      border-radius: 5px
+      color: #fff
+      padding: 50px
+      i
+        padding-right: 5px
+        font-size: 30px
+
   .blog
     display: -webkit-flex
     display: -moz-flex
@@ -171,136 +216,125 @@
     display: flex;
     flex-direction: row
     align-items: stretch
-    justify-content: space-between
+    justify-content: space-around
     flex-wrap: wrap
-    position: relative
-  .blog__post.main-blog__post
-    width: 66%
-    margin-bottom: 0
-    .news-image
-      height: 515px;
-      img:hover
-        -webkit-transform: scale(1.2)
-        -ms-transform: scale(1.2)
-        transform: scale(1.2)
+    .blog__post.main-blog__post
+      width: 65%
+      .news-image
+        height: 515px;
+        img:hover
+          -webkit-transform: scale(1.2)
+          -ms-transform: scale(1.2)
+          transform: scale(1.2)
 
-  .blog__post
-    width: 32%
-    position: relative
-    margin-bottom: 50px
-    &:nth-child(2)
-      margin-right: 34%
-    &:nth-child(5)
-      margin-top: 32%
-    .news-date
-     position: absolute
-     z-index: 1
-     top: 10px
-     left: 10px
-     padding: 8px
-     background-color: rgba(0, 0, 0, 0.4);
-     border-radius: 5px
-     color: #fff
-     span
-      font-family: 'Courier'
-      font-size: 12px
-      line-height: 12px
-      font-weight: bold
-      display: inline-block
-      vertical-align: middle
+    .blog__post
+      width: 32%
       position: relative
-      z-index: 10
-     i
-      padding-right: 5px
-      font-size: 15px
-      line-height: 15px
-      display: inline-block
-      vertical-align: middle
-      position: relative
-      z-index: 10
-    .news-image
-      display: -webkit-flex
-      display: -moz-flex
-      display: -ms-flex
-      display: -o-flex
-      display: flex
-      justify-content: center
-      overflow: hidden
-      width: 100%
-      height: 280px
-      border-radius: 5px
-      img
-        align-self: center;
-        -webkit-transition: -webkit-transform .9s ease-out;
-        transition: -webkit-transform .9s ease-out;
-        transition: transform .9s ease-out;
-        transition: transform .9s ease-out, -webkit-transform .9s ease-out;
-        &:hover
-         -webkit-transform: scale(0.8)
-         -ms-transform: scale(0.8)
-         transform: scale(0.8)
-
-    .news-text-wrapper
-      padding: 0 20px
-      h3
-        font-family: 'RobotoLight'
-        font-size: 24px
-      p
-        font-family: 'HelveticaReg'
-        font-size: 14px
-        color: #555
-      a
+      margin-bottom: 50px
+      .news-date
+       position: absolute
+       z-index: 1
+       top: 10px
+       left: 10px
+       padding: 8px
+       background-color: rgba(0, 0, 0, 0.4);
+       border-radius: 5px
+       color: #fff
+       span
         font-family: 'Courier'
-        font-size: 14px
-        color: #000
-        text-decoration: none
-        display: inline-block
-        text-transform: uppercase
+        font-size: 12px
+        line-height: 12px
         font-weight: bold
+        display: inline-block
+        vertical-align: middle
         position: relative
-        &:before
-          content: ""
-          position: absolute
-          width: 100%
-          height: 1px
-          bottom: 0
-          left: 0
-          background-color: #012265
-          visibility: hidden
-          -webkit-transform: scaleX(0)
-          transform: scaleX(0)
-          -webkit-transition: all 0.3s ease-in-out 0s
-          transition: all 0.3s ease-in-out 0s
-        &:hover:before
-          visibility: visible;
-          -webkit-transform: scaleX(1)
-          transform: scaleX(1)
-        &:hover
-         color: #012265
-  .matches-info
-    width: 32%
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
-    display: flex
-    flex-direction: column
-    Justify-content: space-between
-    position: absolute;
-    right: 0;
-    top: 0;
-    p, h4
-      font-family: 'RobotoLight'
-    .last-match
-      padding-left: 20px
-    .next-match
-      background-color: #012265
-      border-radius: 5px
-      color: #fff
-      padding: 50px
-      i
+        z-index: 10
+       i
         padding-right: 5px
-        font-size: 30px
+        font-size: 15px
+        line-height: 15px
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        z-index: 10
+      .news-image
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        justify-content: center
+        overflow: hidden
+        width: 100%
+        height: 280px
+        border-radius: 5px
+        img
+          align-self: center;
+          -webkit-transition: -webkit-transform .9s ease-out;
+          transition: -webkit-transform .9s ease-out;
+          transition: transform .9s ease-out;
+          transition: transform .9s ease-out, -webkit-transform .9s ease-out;
+          &:hover
+           -webkit-transform: scale(0.8)
+           -ms-transform: scale(0.8)
+           transform: scale(0.8)
+
+      .news-text-wrapper
+        padding: 0 20px
+        h3
+          font-family: 'RobotoLight'
+          font-size: 24px
+        p
+          font-family: 'HelveticaReg'
+          font-size: 14px
+          color: #555
+        a
+          font-family: 'Courier'
+          font-size: 14px
+          color: #000
+          text-decoration: none
+          display: inline-block
+          text-transform: uppercase
+          font-weight: bold
+          position: relative
+          &:before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 1px
+            bottom: 0
+            left: 0
+            background-color: #012265
+            visibility: hidden
+            -webkit-transform: scaleX(0)
+            transform: scaleX(0)
+            -webkit-transition: all 0.3s ease-in-out 0s
+            transition: all 0.3s ease-in-out 0s
+          &:hover:before
+            visibility: visible;
+            -webkit-transform: scaleX(1)
+            transform: scaleX(1)
+          &:hover
+           color: #012265
+
+  .more-news-btn
+    background-color: #fff
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer
+    outline: none
+    padding: 5px 10px
+    padding-bottom: 0
+    border-radius: 5px
+    border: 1px solid  #012265
+    color: #012265
+    text-transform: uppercase
+    font-family: 'Courier'
+    &:hover
+      background-color: #012265
+      color: #fff
+      transition: all 0.7s ease-in-out 0s
 </style>
 
 

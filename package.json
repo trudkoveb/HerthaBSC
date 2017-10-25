@@ -1,7 +1,7 @@
 {
-  "name": "vuejs-tutorials",
-  "description": "Vue.js проект",
-  "author": "Arhey <free.arhey@gmail.com>",
+  "name": "Hertha BSC",
+  "description": "sport template",
+  "author": "Egor <madbfg@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",

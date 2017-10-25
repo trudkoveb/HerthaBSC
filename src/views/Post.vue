@@ -28,6 +28,8 @@
 
 <style lang="sass?indentedSyntax=true">
   .post
+    padding: 20px 50px
+    background-color: #fff
     &:after, &:before
     content: ''
     clear: both

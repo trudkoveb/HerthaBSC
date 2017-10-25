@@ -62,201 +62,201 @@
         clubs: [
         {
           name: 'Герта',
-          matches: '34',
-          points: '49',
+          matches: '9',
+          points: '10',
           status: true,
-          wins: '15',
+          wins: '2',
           draws: '4',
-          losses: '15',
-          goals: '43:47',
-          difference: '-4'
+          losses: '3',
+          goals: '9:11',
+          difference: '-2'
         },
         {
           name: 'Бавария',
-          matches: '34',
-          points: '82',
+          matches: '9',
+          points: '20',
           status: false,
-          wins: '25',
-          draws: '7',
-          losses: '2',
-          goals: '89:22',
-          difference: '+67'
+          wins: '6',
+          draws: '2',
+          losses: '1',
+          goals: '22:7',
+          difference: '+15'
         },
         {
           name: 'РБ Лейпциг',
-          matches: '34',
-          points: '67',
+          matches: '9',
+          points: '19',
           status: false,
-          wins: '20',
-          draws: '7',
-          losses: '7',
-          goals: '66:39',
-          difference: '+27'
+          wins: '6',
+          draws: '1',
+          losses: '2',
+          goals: '16:10',
+          difference: '+6'
         },
         {
           name: 'Боруссия Д',
-          matches: '34',
-          points: '64',
+          matches: '9',
+          points: '20',
           status: false,
-          wins: '18',
-          draws: '10',
-          losses: '6',
-          goals: '72:40',
-          difference: '+32'
+          wins: '6',
+          draws: '2',
+          losses: '1',
+          goals: '25:7',
+          difference: '+18'
         },
         {
           name: 'Хоффенхайм-1899',
-          matches: '34',
-          points: '62',
+          matches: '9',
+          points: '16',
           status: false,
-          wins: '16',
-          draws: '14',
-          losses: '4',
-          goals: '64:37',
-          difference: '+27'
+          wins: '4',
+          draws: '4',
+          losses: '1',
+          goals: '16:11',
+          difference: '+5'
         },
         {
           name: 'Кельн',
-          matches: '34',
-          points: '49',
+          matches: '9',
+          points: '02',
           status: false,
-          wins: '12',
-          draws: '13',
-          losses: '9',
+          wins: '0',
+          draws: '2',
+          losses: '7',
           goals: '51:42',
-          difference: '+9'
+          difference: '-5'
         },
         {
           name: 'Фрайбург',
-          matches: '34',
-          points: '48',
+          matches: '9',
+          points: '08',
           status: false,
-          wins: '14',
-          draws: '6',
-          losses: '14',
-          goals: '42:60',
-          difference: '-18'
+          wins: '1',
+          draws: '5',
+          losses: '3',
+          goals: '6:17',
+          difference: '-11'
         },
         {
           name: 'Вердер',
-          matches: '34',
-          points: '45',
+          matches: '9',
+          points: '05',
           status: false,
-          wins: '13',
-          draws: '16',
-          losses: '5',
-          goals: '61:64',
-          difference: '-3'
+          wins: '0',
+          draws: '5',
+          losses: '4',
+          goals: '3:9',
+          difference: '-6'
         },
         {
           name: 'Боруссия М',
-          matches: '34',
-          points: '45',
+          matches: '9',
+          points: '14',
           status: false,
-          wins: '12',
-          draws: '9',
-          losses: '13',
-          goals: '45:49',
+          wins: '4',
+          draws: '2',
+          losses: '3',
+          goals: '13:17',
           difference: '-4'
         },
         {
           name: 'Шальке-04',
-          matches: '34',
-          points: '43',
+          matches: '9',
+          points: '16',
           status: false,
-          wins: '11',
-          draws: '10',
-          losses: '13',
-          goals: '45:40',
-          difference: '+5'
+          wins: '5',
+          draws: '1',
+          losses: '3',
+          goals: '12:9',
+          difference: '+3'
         },
         {
           name: 'Айнтрахт',
-          matches: '34',
-          points: '42',
+          matches: '9',
+          points: '14',
           status: false,
-          wins: '11',
-          draws: '9',
-          losses: '14',
-          goals: '36:43',
-          difference: '-7'
+          wins: '4',
+          draws: '2',
+          losses: '3',
+          goals: '10:9',
+          difference: '+1'
         },
         {
           name: 'Байер',
-          matches: '34',
-          points: '41',
+          matches: '9',
+          points: '12',
           status: false,
-          wins: '11',
-          draws: '8',
-          losses: '15',
-          goals: '53:55',
-          difference: '-2'
+          wins: '3',
+          draws: '3',
+          losses: '3',
+          goals: '20:14',
+          difference: '+6'
         },
         {
           name: 'Аугсбург',
-          matches: '34',
-          points: '38',
+          matches: '9',
+          points: '12',
           status: false,
-          wins: '9',
-          draws: '11',
-          losses: '14',
-          goals: '35:51',
-          difference: '-16'
+          wins: '3',
+          draws: '3',
+          losses: '3',
+          goals: '12:10',
+          difference: '+2'
         },
         {
           name: 'Гамбург',
-          matches: '34',
-          points: '38',
+          matches: '9',
+          points: '07',
           status: false,
-          wins: '10',
-          draws: '8',
-          losses: '16',
-          goals: '33:61',
-          difference: '-28'
+          wins: '2',
+          draws: '1',
+          losses: '6',
+          goals: '6:15',
+          difference: '-9'
         },
         {
           name: 'Майнц',
-          matches: '34',
-          points: '37',
+          matches: '9',
+          points: '10',
           status: false,
-          wins: '10',
-          draws: '7',
-          losses: '17',
-          goals: '44:55',
-          difference: '-11'
+          wins: '3',
+          draws: '1',
+          losses: '5',
+          goals: '10:15',
+          difference: '-5'
         },
         {
           name: 'Вольфсбург',
-          matches: '34',
-          points: '37',
+          matches: '9',
+          points: '09',
           status: false,
-          wins: '10',
-          draws: '7',
-          losses: '17',
-          goals: '34:52',
-          difference: '-18'
+          wins: '1',
+          draws: '6',
+          losses: '2',
+          goals: '9:12',
+          difference: '-3'
         },
         {
-          name: 'Ингольштадт',
-          matches: '34',
-          points: '32',
+          name: 'Штутгарт',
+          matches: '9',
+          points: '10',
           status: false,
-          wins: '8',
-          draws: '8',
-          losses: '18',
-          goals: '36:57',
-          difference: '-21'
+          wins: '3',
+          draws: '1',
+          losses: '5',
+          goals: '6:11',
+          difference: '-5'
         },
         {
-          name: 'Дармштадт',
-          matches: '34',
-          points: '25',
+          name: 'Ганновер 96',
+          matches: '9',
+          points: '15',
           status: false,
-          wins: '7',
-          draws: '4',
-          losses: '23',
-          goals: '28:63',
-          difference: '-35'
+          wins: '4',
+          draws: '3',
+          losses: '2',
+          goals: '10:7',
+          difference: '+3'
         },
         ]
       }
@@ -296,7 +296,7 @@
                 background-color: #f0ad4e
         tr:last-child, tr:nth-child(17)
             td:first-child:after
-                background-color: #d9534f
+                background-color: red
     .hertha-color
       color: #0058a3
     .place-description
@@ -326,5 +326,5 @@
           &:nth-child(4):after
             background-color: #f0ad4e
           &:last-child:after
-            background-color: #d9534f
+            background-color: red
 </style>

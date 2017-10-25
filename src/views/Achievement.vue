@@ -2,13 +2,13 @@
   div(class="main-content")
     div(class="achievements-wrapper")
       div(class="achievement-example")
-        img(src="http://placehold.it/300x221", class="img-responsive center-block", alt="Чемпионат Германии", title="Чемпионат Германии", width="300", height="221")
+        img(src="../../img/pictures/achievements/bundesliga-cup.jpg", class="img-responsive center-block", alt="Чемпионат Германии", title="Чемпионат Германии", width="300", height="221")
         p Чемпион Германии (1930, 1931)
       div(class="achievement-example")
-        img(src="http://placehold.it/300x221", class="img-responsive center-block", alt="Кубок немецкой лиги", title="Кубок немецкой лиги", width="300", height="221")
+        img(src="../../img/pictures/achievements/germany_cup_leauge.jpg", class="img-responsive center-block", alt="Кубок немецкой лиги", title="Кубок немецкой лиги", width="300", height="221")
         p Кубок Немецкой Лиги (2001, 2002)
       div(class="achievement-example")
-        img(src="http://placehold.it/300x221", class="img-responsive center-block", alt="Кубок Интертото", title="Кубок Интертото", width="300",  height="221")
+        img(src="../../img/pictures/achievements/intertoto-cup.jpg", class="img-responsive center-block", alt="Кубок Интертото", title="Кубок Интертото", width="300",  height="221")
         p Кубок Интертото (2006)
 </template>
 
