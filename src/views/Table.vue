@@ -37,7 +37,7 @@
             td
               | {{ club.losses }}
             td
-              | {{ club.goals }}
+              | {{ club.scoredGoals }}:{{ club.missedGoals }}
             td
               | {{ club.difference }}
     div.place-description
@@ -59,6 +59,8 @@
     data: function() {
       return{
         search: '',
+        // pop: '7',
+        // lop: '2',
         clubs: [
         {
           name: 'Герта',
@@ -68,7 +70,8 @@
           wins: '2',
           draws: '4',
           losses: '3',
-          goals: '9:11',
+          scoredGoals: '9',
+          missedGoals: '11',
           difference: '-2'
         },
         {
@@ -79,7 +82,8 @@
           wins: '6',
           draws: '2',
           losses: '1',
-          goals: '22:7',
+          scoredGoals: '22',
+          missedGoals: '7',
           difference: '+15'
         },
         {
@@ -90,7 +94,8 @@
           wins: '6',
           draws: '1',
           losses: '2',
-          goals: '16:10',
+          scoredGoals: '16',
+          missedGoals: '10',
           difference: '+6'
         },
         {
@@ -101,7 +106,8 @@
           wins: '6',
           draws: '2',
           losses: '1',
-          goals: '25:7',
+          scoredGoals: '25',
+          missedGoals: '7',
           difference: '+18'
         },
         {
@@ -112,7 +118,8 @@
           wins: '4',
           draws: '4',
           losses: '1',
-          goals: '16:11',
+          scoredGoals: '16',
+          missedGoals: '11',
           difference: '+5'
         },
         {
@@ -123,7 +130,8 @@
           wins: '0',
           draws: '2',
           losses: '7',
-          goals: '51:42',
+          scoredGoals: '3',
+          missedGoals: '17',
           difference: '-5'
         },
         {
@@ -134,7 +142,8 @@
           wins: '1',
           draws: '5',
           losses: '3',
-          goals: '6:17',
+          scoredGoals: '6',
+          missedGoals: '17',
           difference: '-11'
         },
         {
@@ -145,7 +154,8 @@
           wins: '0',
           draws: '5',
           losses: '4',
-          goals: '3:9',
+          scoredGoals: '3',
+          missedGoals: '9',
           difference: '-6'
         },
         {
@@ -156,7 +166,8 @@
           wins: '4',
           draws: '2',
           losses: '3',
-          goals: '13:17',
+          scoredGoals: '13',
+          missedGoals: '17',
           difference: '-4'
         },
         {
@@ -167,7 +178,8 @@
           wins: '5',
           draws: '1',
           losses: '3',
-          goals: '12:9',
+          scoredGoals: '12',
+          missedGoals: '9',
           difference: '+3'
         },
         {
@@ -178,7 +190,8 @@
           wins: '4',
           draws: '2',
           losses: '3',
-          goals: '10:9',
+          scoredGoals: '10',
+          missedGoals: '9',
           difference: '+1'
         },
         {
@@ -189,7 +202,8 @@
           wins: '3',
           draws: '3',
           losses: '3',
-          goals: '20:14',
+          scoredGoals: '20',
+          missedGoals: '14',
           difference: '+6'
         },
         {
@@ -200,7 +214,8 @@
           wins: '3',
           draws: '3',
           losses: '3',
-          goals: '12:10',
+          scoredGoals: '12',
+          missedGoals: '10',
           difference: '+2'
         },
         {
@@ -211,7 +226,8 @@
           wins: '2',
           draws: '1',
           losses: '6',
-          goals: '6:15',
+          scoredGoals: '6',
+          missedGoals: '15',
           difference: '-9'
         },
         {
@@ -222,7 +238,8 @@
           wins: '3',
           draws: '1',
           losses: '5',
-          goals: '10:15',
+          scoredGoals: '10',
+          missedGoals: '15',
           difference: '-5'
         },
         {
@@ -233,7 +250,8 @@
           wins: '1',
           draws: '6',
           losses: '2',
-          goals: '9:12',
+          scoredGoals: '9',
+          missedGoals: '12',
           difference: '-3'
         },
         {
@@ -244,7 +262,8 @@
           wins: '3',
           draws: '1',
           losses: '5',
-          goals: '6:11',
+          scoredGoals: '6',
+          missedGoals: '11',
           difference: '-5'
         },
         {
@@ -255,12 +274,18 @@
           wins: '4',
           draws: '3',
           losses: '2',
-          goals: '10:7',
+          scoredGoals: '10',
+          missedGoals: '7',
           difference: '+3'
         },
         ]
       }
-    }
+    },
+    // computed: {
+    //   difference: function () {
+    //     return this.lop - this.pop
+    //   }
+    // }
   }
 </script>
 
