@@ -94,6 +94,14 @@ ul {
   padding: 20px;
   padding-right: 0; }
 
+i {
+  padding-right: 5px; }
+  i.ion-arrow-down-a {
+    color: red; }
+  i.ion-arrow-up-a {
+    color: green;
+    margin-left: 5px; }
+
 .header-wrapper {
   background-color: #f4f4f4; }
 

@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <button class="more-news-btn" @click="limit += 3">Показать еще</button>
+    <button class="standard-btn" @click="limit += 3">Показать еще</button>
 
   </div>
 </template>
@@ -190,13 +190,6 @@
           font-weight: bold
         span
           font-weight: bold
-        i
-          margin-right: 5px
-          &.ion-arrow-down-a
-            color: red
-          &.ion-arrow-up-a
-            color: green
-            margin-left: 5px
     .next-match
       width: 25%;
       margin-right: 0.5%;
@@ -205,7 +198,6 @@
       color: #fff
       padding: 50px
       i
-        padding-right: 5px
         font-size: 30px
 
   .blog
@@ -317,7 +309,7 @@
           &:hover
            color: #012265
 
-  .more-news-btn
+  .standard-btn
     background-color: #fff
     width: auto;
     margin: 0 auto;
