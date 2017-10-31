@@ -69,7 +69,7 @@
                 th ЗМ\ПМ
                 th О
             tbody
-              tr(v-for="leagueEurope in orderBy(leagueEuropes, 'points', -1)", v-bind:class="{ 'hertha-color': leagueEurope.status }")
+              tr(v-for="leagueEurope in orderBy(leagueEuropes, 'points', 'wins', -1)", v-bind:class="{ 'hertha-color': leagueEurope.status }")
                 td {{ leagueEurope.team }}
                 td {{ leagueEurope.wins }}
                 td {{ leagueEurope.draws }}
@@ -135,38 +135,38 @@
         leagueEuropes: [
         {
           team: 'Герта',
-          wins: '0',
+          wins: 0,
           draws: '1',
           loose: '2',
           balls: '1:3',
-          points: '1',
+          points: 1,
           status: true
         },
         {
           team: 'Эстерсунд',
-          wins: '2',
+          wins: 2,
           draws: '1',
           loose: '0',
           balls: '5:2',
-          points: '7',
+          points: 7,
           status: false
         },
         {
           team: 'Заря',
-          wins: '2',
+          wins: 2,
           draws: '0',
           loose: '1',
           balls: '3:3',
-          points: '6',
+          points: 6,
           status: false
         },
         {
           team: 'Атлетик',
-          wins: '0',
+          wins: 0,
           draws: '2',
           loose: '1',
           balls: '2:3',
-          points: '2',
+          points: 2,
           status: false
         },
         ]

@@ -22,7 +22,7 @@
             th
               | Разница
         tbody
-          tr(v-for="club in orderBy(clubs, 'points', -1)", v-bind:class="{ 'hertha-color': club.status }")
+          tr(v-for="club in orderBy(clubs, 'points', 'wins', 'scoredGoals', -1)", v-bind:class="{ 'hertha-color': club.status }")
             td
             td
               | {{ club.name }}
@@ -39,7 +39,7 @@
             td
               | {{ club.scoredGoals }}:{{ club.missedGoals }}
             td
-              | {{ club.difference }}
+              | {{ club.scoredGoals - club.missedGoals}}
     div.place-description
       ul
         li
@@ -59,233 +59,208 @@
     data: function() {
       return{
         search: '',
-        // pop: '7',
-        // lop: '2',
         clubs: [
         {
           name: 'Герта',
           matches: '9',
-          points: '10',
+          points: 14,
           status: true,
-          wins: '2',
+          wins: 3,
           draws: '4',
           losses: '3',
-          scoredGoals: '9',
-          missedGoals: '11',
-          difference: '-2'
+          scoredGoals: 11,
+          missedGoals: 12
         },
         {
           name: 'Бавария',
           matches: '9',
-          points: '20',
+          points: 23,
           status: false,
-          wins: '6',
+          wins: 7,
           draws: '2',
           losses: '1',
-          scoredGoals: '22',
-          missedGoals: '7',
-          difference: '+15'
+          scoredGoals: 24,
+          missedGoals: 7
         },
         {
           name: 'РБ Лейпциг',
           matches: '9',
-          points: '19',
+          points: 19,
           status: false,
-          wins: '6',
+          wins: 6,
           draws: '1',
-          losses: '2',
-          scoredGoals: '16',
-          missedGoals: '10',
-          difference: '+6'
+          losses: '3',
+          scoredGoals: 16,
+          missedGoals: 16
         },
         {
           name: 'Боруссия Д',
           matches: '9',
-          points: '20',
+          points: 20,
           status: false,
-          wins: '6',
+          wins: 6,
           draws: '2',
-          losses: '1',
-          scoredGoals: '25',
-          missedGoals: '7',
-          difference: '+18'
+          losses: '2',
+          scoredGoals: 27,
+          missedGoals: 11
         },
         {
           name: 'Хоффенхайм-1899',
           matches: '9',
-          points: '16',
+          points: 16,
           status: false,
-          wins: '4',
+          wins: 4,
           draws: '4',
-          losses: '1',
-          scoredGoals: '16',
-          missedGoals: '11',
-          difference: '+5'
+          losses: '2',
+          scoredGoals: 17,
+          missedGoals: 14
         },
         {
           name: 'Кельн',
           matches: '9',
-          points: '02',
+          points: 2,
           status: false,
-          wins: '0',
+          wins: 0,
           draws: '2',
-          losses: '7',
-          scoredGoals: '3',
-          missedGoals: '17',
-          difference: '-5'
+          losses: '8',
+          scoredGoals: 4,
+          missedGoals: 19
         },
         {
           name: 'Фрайбург',
           matches: '9',
-          points: '08',
+          points: 8,
           status: false,
-          wins: '1',
+          wins: 1,
           draws: '5',
-          losses: '3',
-          scoredGoals: '6',
-          missedGoals: '17',
-          difference: '-11'
+          losses: '4',
+          scoredGoals: 6,
+          missedGoals: 20
         },
         {
           name: 'Вердер',
           matches: '9',
-          points: '05',
+          points: 5,
           status: false,
-          wins: '0',
+          wins: 0,
           draws: '5',
-          losses: '4',
-          scoredGoals: '3',
-          missedGoals: '9',
-          difference: '-6'
+          losses: '5',
+          scoredGoals: 3,
+          missedGoals: 12
         },
         {
           name: 'Боруссия М',
           matches: '9',
-          points: '14',
+          points: 17,
           status: false,
-          wins: '4',
+          wins: 5,
           draws: '2',
           losses: '3',
-          scoredGoals: '13',
-          missedGoals: '17',
-          difference: '-4'
+          scoredGoals: 16,
+          missedGoals: 18
         },
         {
           name: 'Шальке-04',
           matches: '9',
-          points: '16',
+          points: 17,
           status: false,
-          wins: '5',
-          draws: '1',
+          wins: 5,
+          draws: '2',
           losses: '3',
-          scoredGoals: '12',
-          missedGoals: '9',
-          difference: '+3'
+          scoredGoals: 13,
+          missedGoals: 10
         },
         {
           name: 'Айнтрахт',
           matches: '9',
-          points: '14',
+          points: 15,
           status: false,
-          wins: '4',
-          draws: '2',
+          wins: 4,
+          draws: '3',
           losses: '3',
-          scoredGoals: '10',
-          missedGoals: '9',
-          difference: '+1'
+          scoredGoals: 11,
+          missedGoals: 10
         },
         {
           name: 'Байер',
           matches: '9',
-          points: '12',
+          points: 15,
           status: false,
-          wins: '3',
+          wins: 4,
           draws: '3',
           losses: '3',
-          scoredGoals: '20',
-          missedGoals: '14',
-          difference: '+6'
+          scoredGoals: 22,
+          missedGoals: 15
         },
         {
           name: 'Аугсбург',
           matches: '9',
-          points: '12',
+          points: 15,
           status: false,
-          wins: '3',
+          wins: 4,
           draws: '3',
           losses: '3',
-          scoredGoals: '12',
-          missedGoals: '10',
-          difference: '+2'
+          scoredGoals: 15,
+          missedGoals: 10
         },
         {
           name: 'Гамбург',
           matches: '9',
-          points: '07',
+          points: 7,
           status: false,
-          wins: '2',
+          wins: 2,
           draws: '1',
-          losses: '6',
-          scoredGoals: '6',
-          missedGoals: '15',
-          difference: '-9'
+          losses: '7',
+          scoredGoals: 7,
+          missedGoals: 17
         },
         {
           name: 'Майнц',
           matches: '9',
-          points: '10',
+          points: 11,
           status: false,
-          wins: '3',
-          draws: '1',
+          wins: 3,
+          draws: '2',
           losses: '5',
-          scoredGoals: '10',
-          missedGoals: '15',
-          difference: '-5'
+          scoredGoals: 11,
+          missedGoals: 16
         },
         {
           name: 'Вольфсбург',
-          matches: '9',
-          points: '09',
+          matches: '10',
+          points: 9,
           status: false,
-          wins: '1',
-          draws: '6',
+          wins: 1,
+          draws: '7',
           losses: '2',
-          scoredGoals: '9',
-          missedGoals: '12',
-          difference: '-3'
+          scoredGoals: 10,
+          missedGoals: 13
         },
         {
           name: 'Штутгарт',
           matches: '9',
-          points: '10',
+          points: 13,
           status: false,
-          wins: '3',
+          wins: 4,
           draws: '1',
           losses: '5',
-          scoredGoals: '6',
-          missedGoals: '11',
-          difference: '-5'
+          scoredGoals: 9,
+          missedGoals: 11
         },
         {
           name: 'Ганновер 96',
           matches: '9',
-          points: '15',
+          points: 18,
           status: false,
-          wins: '4',
+          wins: 5,
           draws: '3',
           losses: '2',
-          scoredGoals: '10',
-          missedGoals: '7',
-          difference: '+3'
+          scoredGoals: 20,
+          missedGoals: 9
         },
         ]
       }
-    },
-    // computed: {
-    //   difference: function () {
-    //     return this.lop - this.pop
-    //   }
-    // }
+    }
   }
 </script>
 
