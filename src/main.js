@@ -11,6 +11,7 @@ import Vue2Filters from 'vue2-filters'
 var Main = require('./views/Main.vue')
 var Team = require('./views/Team.vue')
 var Post = require('./views/Post.vue')
+var SliderPost = require('./views/SliderPost.vue')
 var History = require('./views/History.vue')
 var Table = require('./views/Table.vue')
 var Achievement = require('./views/Achievement.vue')
@@ -30,7 +31,8 @@ var router = new VueRouter({
  { path: '/achievement', component: Achievement },
  { path: '/', component: Main },
  { path: '/season', component: Season },
- { path: '/post/:id', name: 'post', component: Post }
+ { path: '/post/:id', name: 'post', component: Post },
+ { path: '/post/:id', name: 'sliderpost', component: SliderPost }
  ]
 })
 

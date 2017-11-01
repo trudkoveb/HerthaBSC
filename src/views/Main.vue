@@ -2,27 +2,15 @@
   <div class="main-content">
     <div id="carousel-wrapper">
       <carousel-3d :autoplay="true" :autoplayTimeout="5000" :controls-visible="true">
-        <slide class="slide-a" :index="0">
-          <div class="slider-info">
-            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum minima, ea labore delectus quis.</p>
-            <a href="">{{ readMore }}</a>
-          </div>
-        </slide>
-        <slide class="slide-b" :index="1">
-          <div class="slider-info">
-            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quam consequuntur corporis rerum consequatur rem?</p>
-            <a href="">{{ readMore }}</a>
-          </div>
-        </slide>
-        <slide class="slide-c" :index="2">
-          <div class="slider-info">
-            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis numquam libero, quas? Tenetur ea, voluptatum!</p>
-            <a href="">{{ readMore }}</a>
-          </div>
-        </slide>
+        <div v-for="(sliderpost, index) in sliderposts">
+          <slide :class="sliderpost.class" :index="sliderpost.index">
+            <div class="slider-info">
+              <h1>{{ sliderpost.title }}</h1>
+              <p>{{ sliderpost.shortTitle }}</p>
+              <router-link :to="{ name: 'sliderpost', params: { id: index } }">{{ readMore }}</router-link>
+            </div>
+          </slide>
+        </div>
       </carousel-3d>
     </div>
 
@@ -68,6 +56,7 @@
   import { Carousel3d, Slide } from 'vue-carousel-3d';
 
   var posts = require('../posts')
+  var sliderposts = require('../sliderposts')
 
   export default {
     name: 'carousel-wrapper',
@@ -80,6 +69,7 @@
         slides: 3,
         readMore: 'Читать дальше',
         posts: posts,
+        sliderposts: sliderposts,
         limit: 5
       }
     }
@@ -87,6 +77,8 @@
 </script>
 
 <style lang="sass?indentedSyntax=true">
+  @import '../../sass/common/_variables'
+
   .carousel-3d-container
     height: 100%!important
     margin: 0!important
@@ -179,8 +171,10 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 25px
+    @media (#{$max_ipad})
+      flex-wrap: wrap
     p, h4
-      font-family: 'RobotoLight'
+      font-family: $font-roboto-light
     .last-match
       padding-left: 20px
       width: 70%
