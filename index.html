@@ -4,12 +4,44 @@
   <meta charset="utf-8">
   <title>Hertha</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="yandex-verification" content="d77687dfe7c8220d" />
+  <meta name="description" content="Русскоязычный новостной сайт, посвященный футбольному клубу Герта Берлин." />
+  <meta name="keywords" content="Герта, Герта Берлин, ФК Герта" />
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon?v=2" />
 
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
   <link rel="stylesheet" href="sass/style.css">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter46966155 = new Ya.Metrika({
+            id:46966155,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+          });
+        } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/46966155" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 
 </head>
 <body>
@@ -19,81 +51,86 @@
 
       <div class="header-wrapper">
         <header>
-        <!-- <button class="menu-btn">
-          <i class="ion-navicon-round"></i>
-        </button> -->
 
-        <div class="header-top">
-          <div class="header-top-right">
-            <i class="ion-android-search"></i>
-            <input type="text" placeholder="Искать...">
-            <a href="">
-              <i class="ion-social-facebook"></i>
-            </a>
-            <a href="">
-              <i class="ion-social-twitter"></i>
-            </a>
-            <a href="">
-              <i class="ion-social-instagram"></i>
-            </a>
-            <a href="">
-              <i class="ion-social-rss"></i>
-              <span>RSS</span>
+          <!-- <div class="header-top">
+            <div class="header-top-right">
+              <i class="ion-android-search"></i>
+              <input type="text" placeholder="Искать...">
+              <a href="">
+                <i class="ion-social-facebook"></i>
+              </a>
+              <a href="">
+                <i class="ion-social-twitter"></i>
+              </a>
+              <a href="">
+                <i class="ion-social-instagram"></i>
+              </a>
+              <a href="">
+                <i class="ion-social-rss"></i>
+                <span>RSS</span>
+              </a>
+            </div>
+          </div> -->
+
+          <div class="header-logo">
+            <a href="/" class="logo">
+              <img src="img/logo.png" alt="Hertha BSC">
             </a>
           </div>
-        </div>
 
-        <div class="header-logo">
-          <a href="/" class="logo">
-            <img src="img/logo.png" alt="Hertha BSC">
-          </a>
-        </div>
 
-        <nav>
-          <router-link class="link" to="/team">Команда</router-link>
-          <router-link to="/table">Таблица</router-link>
-          <router-link to="/season">Сезон</router-link>
-          <router-link to="/achievement">Достижения</router-link>
-          <router-link to="/history">История</router-link>
-        </nav>
+          <button class="menu-btn laptop-hidden" v-on:click="show =!show">
+            <i class="ion-navicon-round"></i>
+          </button>
 
-        <div class="tags-search">
-          <a href="#">Боруссия</a>
-          <a href="#">Калу</a>
-          <a href="#">Травма</a>
-          <a href="#">Дардаи</a>
-        </div>
+          <nav v-show="show" transition="slide">
+            <ul>
+              <li><router-link class="link" to="/team">Команда</router-link></li>
+              <li><router-link to="/table">Таблица</router-link></li>
+              <li><router-link to="/season">Сезон</router-link></li>
+              <li><router-link to="/achievement">Достижения</router-link></li>
+              <li><router-link to="/history">История</router-link></li>
+            </ul>
+          </nav>
 
-      </header>
+          <!-- <div class="tags-search">
+            <a href="#">Боруссия</a>
+            <a href="#">Калу</a>
+            <a href="#">Травма</a>
+            <a href="#">Дардаи</a>
+          </div> -->
+
+        </header>
+      </div>
+
+      <transition name="slide-fade">
+        <router-view></router-view>
+      </transition>
+
+
+
+
+
+
     </div>
 
-    <transition name="slide-fade">
-      <router-view></router-view>
-    </transition>
-
-
-
-
-
-
+    <footer>
+      <p>&copy; 2017</p>
+      <p>HERTHA BSC</p>
+      <!-- <a href="#">
+        <i class="ion-social-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="ion-social-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="ion-social-instagram"></i>
+      </a> -->
+    </footer>
   </div>
 
-  <footer>
-    <p>&copy; 2017</p>
-    <p>by Egor Trudkov</p>
-    <a href="#">
-      <i class="ion-social-facebook"></i>
-    </a>
-    <a href="#">
-      <i class="ion-social-twitter"></i>
-    </a>
-    <a href="#">
-      <i class="ion-social-instagram"></i>
-    </a>
-  </footer>
-</div>
+  <script src="build/bundle.js"></script>
 
-<script src="build/bundle.js"></script>
 
 </body>
 </html>

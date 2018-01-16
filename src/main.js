@@ -23,21 +23,26 @@ Vue.use(VueRouter)
 Vue.use(Vue2Filters)
 
 var router = new VueRouter({
- mode: 'history',
- routes: [
- { path: '/team', component: Team },
- { path: '/history', component: History },
- { path: '/table', component: Table },
- { path: '/achievement', component: Achievement },
- { path: '/', component: Main },
- { path: '/season', component: Season },
- { path: '/post/:id', name: 'post', component: Post },
- { path: '/post/:id', name: 'sliderpost', component: SliderPost }
- ]
+   mode: 'history',
+   routes: [
+   { path: '/team/', component: Team },
+   { path: '/history/', component: History },
+   { path: '/table/', component: Table },
+   { path: '/achievement/', component: Achievement },
+   { path: '/', component: Main },
+   { path: '/season/', component: Season },
+   { path: '/post/:id', name: 'post', component: Post },
+   { path: '/post/:id', name: 'sliderpost', component: SliderPost }
+   ]
 })
 
 new Vue({
- el: '#app',
- router: router
+   el: '#app',
+   router: router,
+   data: function() {
+      return{
+        show: true
+    }
+}
 })
 

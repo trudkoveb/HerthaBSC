@@ -41,7 +41,7 @@
           | История футбольного клуба Герта начинается 25 июля 1892 года, когда команда еще называлась
           span(class="bold")  БФК Герта 92
           | . Клуб основал молодой юноша со своими друзьями, а название для команды он придумал благодаря пароходу, на котором когда-то плавал со своим отцом. У этого парохода была бело-синяя дымовая труба, и её окрас был позаимствованы друзьями как цвета клуба. Так же существует история, что название Герта происходит от слова Nerthus, которое в древнегерманской мифологии означает Богиню плодородия. Прозвищем команды еще с самого начала стало такое же прозвище, как и у футбольного клуба Ювентус – Старая синьора (Die Alte Dame). Первый успех пришёл в команду в 1906 году – «Герта» выиграла чемпионат Берлина.
-          img(class="float-right", src="../../img/pictures/history/hertha.jpg")
+          img(class="float-right without-float", src="../../img/pictures/history/hertha.jpg")
           p
             | После Первой мировой войны команда испытывала финансовые трудности и, чтобы решить их, была вынуждена объединиться со спортивным клубом «Берлинер» в 1920 году и именно тогда команда
             span(class="bold")  получила приставку BSC к своему названию.
@@ -52,7 +52,7 @@
           p
             | С 1933 года после реорганизации все футбольной системы Германии футбольный клуб Герта стал играть в Гаулиге Берлина-Бранденбурга (одной из региональных лиг Гаулиги). В 1935, 1937 и 1944 годах команда становилась победителем данной лиги. После Второй мировой войны ФК Герта был расформирован, но не на долго. Практически сразу же команду возродили под названием SG Gesundbrunnen и клуб стал играть в Берлинской Оберлиге в группе «C». Но долго там клуб не продержался из-за уменьшения количества команд с 36 до 12. И после того Герта до 1949 года стала играть в любительской лиге Берлина. В 1949 году в истории футбольного клуба Герты произошли несколько хороших событий. Сначала было возвращено прежнее название Hertha BSC Berlin, а после клуб приняли в главную лигу Германии.
             span(class="bold")  После этого на протяжении многих лет команда была одной из лучших не только в Берлине, но и в Германии.
-          img(class="float-left", src="../../img/pictures/history/hertha-60.jpg", width='50%')
+          img(class="float-left without-float", src="../../img/pictures/history/hertha-60.jpg", width='50%')
           p
             | В 1963 году была образована Бундеслига и «Герта» приняла участие в её первом сезоне. Столичные футболисты показывали содержательный футбол в главной лиге страны, но уже по итогам сезона 1964/65 команда была понижена до Региональной лиги из-за коррупционного скандала. Берлинские болельщики очень хотели видеть местную команду в Бундеслиге, поэтому пока Герта скиталась в низшем дивизионе,в национальном чемпионате появилась новая команда - "Тасмания 1900", которая не добилась успеха в чемпионате, а ровно наоборот - опозорила столицу Германии в чудовищном стиле. В тридцати четырех матчах Бундеслиги команда одержала победу только в двух, четыре матча смогла свести к ничьим и в оставшихся 28 играх потерпела поражения. Разница мячей при этом составила -93 (забито - 15 мячей, пропущено - 108). После этого сезона ФК "Тасмания 1900" был расформирован из-за банкротства.
             span(class="bold")  Герта же вернулась в Бундеслигу в 1968 году
@@ -68,7 +68,7 @@
             | , уступив чемпионство менхенгладбахской «Боруссии».
           p
             | В 1975/1976 гг. Герта снова играла в Кубке Уефа и опять вылетела во втором раунде, на этот раз уступив амстердамскому Аяксу (2:4).
-          img(class="float-left", src="../../img/pictures/history/Hertha-BSC.jpg")
+          img(class="float-left without-float", src="../../img/pictures/history/Hertha-BSC.jpg")
           p
             | В сезоне 1977/1978 Герта завоевывает бронзу в национальном чемпионате, всего лишь на одно очко опередив Штутгарт и Фортуну.
           p
@@ -77,7 +77,7 @@
             | , по пути взяв верх над болгарским клубом Ботев, тбилисским Динамо, датским Эсбьергом и пражской Дуклой, но уступила сербской Црвене Звезде и покинула турнир.
           p
             | В сезоне 1982/1983 Герта вылетает из национального чемпионата, заняв последнее место. После этого дела у команды идут не лучшим образом : клуб много лет проводит во второй Бундеслиги, лишь временами, зарабатывая путевку в сильнейшую лигу Германии, но практически сразу же ее покидая.
-          img(class="float-right", src="../../img/pictures/history/hertha-80.jpg", width='50%')
+          img(class="float-right without-float", src="../../img/pictures/history/hertha-80.jpg", width='50%')
           p
             | Наконец, злоключения берлинцев заканчиваются в сезоне 1997/1998. Команда сумела занять 11 место в первой Бундеслиги, таким образом, сохранив прописку на следующий сезон, в котором команда показывает сумасшедшее рвение и завоевывает путевку в Лигу Чемпионов и четвертую бронзу в своей истории, отстав лишь на один балл от серебряных медалей.
             span(class="bold")  С этого года у клуба начинаются золотые времена в современной эпохе.
@@ -87,7 +87,7 @@
             | в группе H, показав более чем содержательный футбол в группе с Челси, Галатасараем и Миланом, но во Втором групповом этапе у берлинцев не хватило опыта и сил. Как итог - последнее место в группе A.
           p
             | В 2000/2001 Герта продолжает показывать стабильность - пятое место в чемпионате и снова путевка в Кубок Уефа. В розыгрыше же этого сезона команда вылетела в третьем раунде после противостояния с миланским Интернационале.
-          img(class="float-right", src="../../img/pictures/history/marcelinho.jpg")
+          img(class="float-right without-float", src="../../img/pictures/history/marcelinho.jpg")
           p
             | В следующем сезоне столичные футболисты поднимают планку - четвертое место и очередное участие в Кубке Уефа. К сожалению, в Кубке Уефа 2001/2002 Герта вылетела на том же этапе, что и в прошлом году : на этот раз сильнее оказался ФК Серветт.
           p
@@ -102,7 +102,7 @@
             | 2005/2006 - шестое место и кубок Интертото. Сезон в Европе 2005/2006 получается достаточно успешным для Герты. Клуб без проблем проходит в групповой этап, в котором занимает третье место, не потерпев ни одного поражения, но в 1\16 финала неожиданно уступает Рапиду.
           p
             | В следующем сезоне команда занимает только 10 место в Бундеслиге, а в Кубке Уефа столичные футболисты продолжили неприятно удивлять своих фанатов, довольно быстро вылетев на предварительных раундах.
-          img(class="float-left", src="../../img/pictures/history/HQjoidZMmgk.jpg", width='50%')
+          img(class="float-left without-float", src="../../img/pictures/history/HQjoidZMmgk.jpg", width='50%')
           p
             | 2007/2008 - 10 место, но Герта квалифицировался в кубок УЕФА как победитель соревнования Fair Play.
           p
@@ -128,78 +128,86 @@
 </script>
 
 <style lang="sass?indentedSyntax=true">
-    .history
-      padding: 50px 20px
-      background-color: #fff
-      color: #000
-      .carousel-3d-container
-        height: auto!important
-        margin: 0!important
-        margin-bottom: 20px!important
+  @import '../../sass/common/_variables'
 
-      .carousel-3d-slider
-        width: 70%!important
-        height: 600px!important
+  .history
+    padding: 50px 20px
+    background-color: #fff
+    color: #000
+    .carousel-3d-container
+      height: auto!important
+      margin: 0!important
+      margin-bottom: 20px!important
 
-      .carousel-3d-slide
-        width: 100%!important
-        height: 100%!important
+    .carousel-3d-slider
+      width: 70%!important
+      height: 600px!important
 
-      .carousel-3d-slide img
-        width: auto!important
-      .slide-a
-        background-image: url('../../img/pictures/history/3-format43.jpg')
-      .slide-b
-        background-image: url('../../img/pictures/history/hertha-90.jpg')
-      .slide-c
-        background-image: url('../../img/pictures/history/hertha_1472484707.jpg')
-      .slide-d
-        background-image: url('../../img/pictures/history/hertha-schalke-130-_v-gseagaleriexl.jpg')
-      .slide-e
-        background-image: url('../../img/pictures/history/I27uG-nkk3k.jpg')
-      .slide-f
-        background-image: url('../../img/pictures/history/NAkK0eObi18.jpg')
+    .carousel-3d-slide
+      width: 100%!important
+      height: 100%!important
 
-      .history-info
-        p
-          font-family: 'RobotoLight'
-          a
-            font-family: 'Courier'
-            font-size: 16px
-            color: #000
-            text-decoration: none
-            display: inline-block
-            font-weight: bold
-            position: relative
-            margin-left: 5px
-            &:before
-              content: ""
-              position: absolute
-              width: 100%
-              height: 1px
-              bottom: 0
-              left: 0
-              background-color: #012265
-              visibility: hidden
-              -webkit-transform: scaleX(0)
-              transform: scaleX(0)
-              -webkit-transition: all 0.3s ease-in-out 0s
-              transition: all 0.3s ease-in-out 0s
-            &:hover:before
-              visibility: visible;
-              -webkit-transform: scaleX(1)
-              transform: scaleX(1)
-            &:hover
-             color: #012265
-      .history-text
-        font-family: 'HelveticaReg'
-        h2
-          margin: 40px
-        p
+    .carousel-3d-slide img
+      width: auto!important
+    .slide-a
+      background-image: url('../../img/pictures/history/3-format43.jpg')
+    .slide-b
+      background-image: url('../../img/pictures/history/hertha-90.jpg')
+    .slide-c
+      background-image: url('../../img/pictures/history/hertha_1472484707.jpg')
+    .slide-d
+      background-image: url('../../img/pictures/history/hertha-schalke-130-_v-gseagaleriexl.jpg')
+    .slide-e
+      background-image: url('../../img/pictures/history/I27uG-nkk3k.jpg')
+    .slide-f
+      background-image: url('../../img/pictures/history/NAkK0eObi18.jpg')
+
+    .history-info
+      p
+        font-family: 'RobotoLight'
+        a
+          font-family: 'Courier'
           font-size: 16px
-          line-height: 22px
-          text-indent: 40px
-          margin-bottom: 25px
-          &:last-child
-            margin-bottom: 0
+          color: #000
+          text-decoration: none
+          display: inline-block
+          font-weight: bold
+          position: relative
+          margin-left: 5px
+          &:before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 1px
+            bottom: 0
+            left: 0
+            background-color: #012265
+            visibility: hidden
+            -webkit-transform: scaleX(0)
+            transform: scaleX(0)
+            -webkit-transition: all 0.3s ease-in-out 0s
+            transition: all 0.3s ease-in-out 0s
+          &:hover:before
+            visibility: visible;
+            -webkit-transform: scaleX(1)
+            transform: scaleX(1)
+          &:hover
+           color: #012265
+    .history-text
+      font-family: 'HelveticaReg'
+      h2
+        margin: 40px
+        @media (#{$max_ipad})
+          margin: 40px 0
+      p
+        font-size: 16px
+        line-height: 22px
+        text-indent: 40px
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+      img
+        @media (#{$max_ipad})
+          width: 100%
+          padding: 0
 </style>

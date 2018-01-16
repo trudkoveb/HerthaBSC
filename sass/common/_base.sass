@@ -11,6 +11,9 @@ ul
   padding: 0
   margin: 0
 
+a, input, button
+  outline: none
+
 .table-wrapper
   padding: 40px
   -webkit-box-shadow: 1px 1px 4px 2px #030303;
@@ -54,6 +57,10 @@ ul
   margin: 0 auto
   margin-bottom: 50px
   margin-top: -180px
+  @media (#{$max_ipad})
+    width: 95%
+    padding: 0
+    margin-top: 0
 
 
 // Common classes
@@ -78,6 +85,24 @@ ul
   float: right
   padding: 20px
   padding-right: 0
+
+
+// Adaptive
+@media (#{$max_ipad})
+  .mobile-visible
+    display: block
+
+  .adaptive-table
+    overflow-x: auto
+    box-shadow: none
+
+  .without-float
+    float: none
+
+@media (#{$min_ipad})
+  .laptop-hidden
+    display: none
+
 
 // Icons
 i

@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class="main-content")
-    div.table-wrapper
+    div.table-wrapper.adaptive-table
       table(class="team-table")
         thead
           tr
@@ -52,48 +52,39 @@
           },
           {
             number: '22',
-            name: 'Рун Ярстейн',
+            name: 'Руне Ярстейн',
             image: '../img/flags/norway-flag.png',
             position: 'Вратарь',
             age: '32',
-            height: '186',
+            height: '190',
             weight: '82'
           },
           {
-            number: '29',
-            name: 'Нильс-Йонатан Кёрбер',
+            number: '25',
+            name: 'Джордан Торунарига',
             image: '../img/flags/germany-flag.png',
             position: 'Вратарь',
-            age: '20',
-            height: '186',
-            weight: '84'
+            age: '19',
+            height: '189',
+            weight: '77'
           },
           {
-            number: '35',
-            name: 'Мариус Гершбек',
-            image: '../img/flags/germany-flag.png',
+            number: '4',
+            name: 'Карим Рекик',
+            image: '../img/flags/holl-flag.png',
             position: 'Вратарь',
             age: '22',
-            height: '187',
-            weight: '80'
+            height: '186',
+            weight: '79'
           },
           {
-            number: '25',
-            name: 'Джон Брукс',
-            image: '../img/flags/usa-flag.png',
+            number: '17',
+            name: 'Максимилиан Миттельштедт',
+            image: '../img/flags/germany-flag.png',
             position: 'Защитник',
-            age: '24',
-            height: '193',
-            weight: '78'
-          },
-          {
-            number: '28',
-            name: 'Фабиан Лустенбергер',
-            image: '../img/flags/swiss-flag.png',
-            position: 'Защитник',
-            age: '29',
-            height: '180',
-            weight: '70'
+            age: '20',
+            height: '178',
+            weight: '69'
           },
           {
             number: '21',
@@ -106,12 +97,21 @@
           },
           {
             number: '23',
-            name: 'Йоханнес Ван Дер Берг',
+            name: 'Митчелл Вайзер',
             image: '../img/flags/germany-flag.png',
             position: 'Защитник',
-            age: '25',
-            height: '183',
-            weight: '75'
+            age: '23',
+            height: '176',
+            weight: '67'
+          },
+          {
+            number: '5',
+            name: 'Никлас Штарк',
+            image: '../img/flags/germany-flag.png',
+            position: 'Защитник',
+            age: '33',
+            height: '189',
+            weight: '77'
           },
           {
             number: '34',
@@ -141,6 +141,15 @@
             weight: '85'
           },
           {
+            number: '28',
+            name: 'Фабиан Лустенбергер',
+            image: '../img/flags/swiss-flag.png',
+            position: 'Защитник',
+            age: '29',
+            height: '180',
+            weight: '70'
+          },
+          {
             number: '14',
             name: 'Валентин Штокер',
             image: '../img/flags/swiss-flag.png',
@@ -150,40 +159,13 @@
             weight: '72'
           },
           {
-            number: '9',
-            name: 'Александр Баумйоханн',
+            number: '26',
+            name: 'Арне Майер',
             image: '../img/flags/germany-flag.png',
             position: 'Полузащитник',
-            age: '30',
-            height: '178',
-            weight: '75'
-          },
-          {
-            number: '17',
-            name: 'Толга Чигерчи',
-            image: '../img/flags/turkey-flag.png',
-            position: 'Полузащитник',
-            age: '25',
-            height: '185',
-            weight: '80'
-          },
-          {
-            number: '10',
-            name: 'Анис Бен-Хатира',
-            image: '../img/flags/tunis-flag.png',
-            position: 'Полузащитник',
-            age: '29',
+            age: '18',
             height: '183',
-            weight: '80'
-          },
-          {
-            number: '9',
-            name: 'Йенс Хегелер',
-            image: '../img/flags/germany-flag.png',
-            position: 'Полузащитник',
-            age: '29',
-            height: '193',
-            weight: '86'
+            weight: '79'
           },
           {
             number: '21',
@@ -193,15 +175,6 @@
             age: '29',
             height: '176',
             weight: '67'
-          },
-          {
-            number: '12',
-            name: 'Ронни',
-            image: '../img/flags/brazil-flag.png',
-            position: 'Полузащитник',
-            age: '31',
-            height: '175',
-            weight: '74'
           },
           {
             number: '6',
@@ -222,22 +195,22 @@
             weight: '68'
           },
           {
-            number: '27',
-            name: 'Рой Бееренс',
-            image: '../img/flags/holl-flag.png',
+            number: '10',
+            name: 'Ондрей Дуда',
+            image: '../img/flags/slovac-flag.png',
             position: 'Полузащитник',
-            age: '29',
-            height: '193',
-            weight: '85'
+            age: '22',
+            height: '183',
+            weight: '64'
           },
           {
-            number: '7',
-            name: 'Хаджиме Хасагай',
-            image: '../img/flags/japan-flag.png',
+            number: '11',
+            name: 'Мэтью Лекки',
+            image: '../img/flags/australia-flag.png',
             position: 'Полузащитник',
-            age: '31',
-            height: '176',
-            weight: '68'
+            age: '26',
+            height: '180',
+            weight: '84'
           },
           {
             number: '3',
@@ -249,13 +222,13 @@
             weight: '74'
           },
           {
-            number: '31',
-            name: 'Флориан Кохис',
+            number: '27',
+            name: 'Дэви Зельке',
             image: '../img/flags/germany-flag.png',
-            position: 'Полузащитник',
+            position: 'Форвард',
             age: '22',
-            height: '173',
-            weight: '69'
+            height: '192',
+            weight: '75'
           },
           {
             number: '8',
@@ -267,22 +240,13 @@
             weight: '77'
           },
           {
-            number: '11',
-            name: 'Сами Аллаги',
-            image: '../img/flags/tunis-flag.png',
-            position: 'Форвард',
-            age: '31',
-            height: '184',
-            weight: '77'
-          },
-          {
-            number: '16',
-            name: 'Юлиан Шибер',
+            number: '19',
+            name: 'Ведад Ибишевич',
             image: '../img/flags/germany-flag.png',
             position: 'Форвард',
-            age: '28',
-            height: '186',
-            weight: '83'
+            age: '32',
+            height: '189',
+            weight: '80'
           }
         ]
       }

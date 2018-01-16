@@ -12,8 +12,19 @@
         p Кубок Интертото (2006)
 </template>
 
+<script>
+  module.exports = {
+    data: function(){
+      return{
+        show: false
+      }
+    }
+  }
+</script>
 
 <style lang="sass?indentedSyntax=true">
+  @import '../../sass/common/_variables'
+
   .achievements-wrapper
     background-color: #fff
     display: -webkit-flex
@@ -24,6 +35,7 @@
     flex-direction: column
     align-items: flex-end
     padding: 50px 0
+    flex-wrap: wrap
     .achievement-example
       display: -webkit-flex
       display: -moz-flex
@@ -34,12 +46,17 @@
       align-items: center
       justify-content: center
       margin-bottom: 50px
+      flex-wrap: wrap
       &:last-child
         margin-bottom: 0
       p
         width: 540px
         font-family: 'HelveticaReg'
         font-size: 18px
+        @media (#{$max_ipad})
+          width: auto
       img
         margin-right: 50px
+        @media (#{$max_ipad})
+          margin-right: 0
 </style>

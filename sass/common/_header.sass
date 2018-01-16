@@ -5,6 +5,9 @@ header
   width: $content-width
   margin: 0 auto
   padding-bottom: 200px
+  @media (#{$max_ipad})
+    width: 100%
+    padding-bottom: 0
 
 .header-top
   padding: 20px 5%
@@ -14,6 +17,9 @@ header
   justify-content: flex-end
   align-items: center
   border-bottom: 1px solid  #e5e5e5
+  @media (#{$max_ipad})
+    justify-content: center
+    margin: 0
 
 .header-top-right
   a
@@ -59,21 +65,52 @@ header
 
 .header-logo
   text-align: center
-  margin-top: -50px
+  // margin-top: -50px
+  @media (#{$max_ipad})
+    margin-top: 0
+    img
+      width: 60%
+
+button.menu-btn
+  border: none
+  background-color: transparent
 
 nav
   text-align: center
   padding: 30px 0
-  a
-    font-family: $font-courier-reg
-    font-size: 20px
-    font-weight: bold
-    text-decoration: none
-    text-transform: uppercase
-    margin-right: 50px
-    color: $font-text-color
-    &:last-child
-      margin-right: 0
+  ul
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    @media (#{$max_ipad})
+      flex-direction: column
+    li
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+      @media (#{$max_ipad})
+        margin-right: 0
+      a
+        font-family: $font-courier-reg
+        font-size: 20px
+        font-weight: bold
+        text-decoration: none
+        text-transform: uppercase
+        margin-right: 50px
+        color: $font-text-color
+        &:last-child
+          margin-right: 0
+
+.slide-transition
+    transition: all .3s cubic-bezier(.65, .05, .36, 1)
+
+.slide-leave, .slide-enter
+    right: -100%
 
 .tags-search
   text-align: center

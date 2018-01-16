@@ -16,19 +16,19 @@
 
     <div class="matches-info">
       <div class="last-match">
-        <p>Фрайбург - Герта 1:1</p>
-        <p><span>Голы :</span> 51' Хаберер - 81' Калу (п)</p>
-        <p><span>Замены :<br></span><i class="ion-arrow-down-a"></i>Хаберер, Террацино, Линхарт<i class="ion-arrow-up-a"></i>Петерсен, Кат, Кох<br>
-          <i class="ion-arrow-down-a"></i>Ибишевич, Дуда, Лустенбергер<i class="ion-arrow-up-a"></i>Зельке, Лазаро, Майер
+        <p>Штутгарт - Герта 1:0</p>
+        <p><span>Голы :</span> 78' Штарк (Гомес) (автогол)</p>
+        <p><span>Замены :<br></span><i class="ion-arrow-down-a"></i>Донис, Аколо, Озджан<i class="ion-arrow-up-a"></i>Гинчек, Инсуа, Бадштубер<br>
+          <i class="ion-arrow-down-a"></i>Зельке, Лазаро<i class="ion-arrow-up-a"></i>Ибишевич, Дуда
         </p>
-        <p><span>Желтые карточки :</span> Нидерлехнер, Хаберер, Сеюнджю, Линхарт - Лекки, Ибишевич, Штарк</p>
-        <p><span>Красные карточки :</span> - </p>
+        <p><span>Желтые карточки :</span> Гомес -</p>
+        <p><span>Красные карточки :</span></p>
       </div>
       <div class="next-match">
         <h4><i class="ion-fireball"></i>Следующий матч:</h4>
-        <p><i class="ion-ios-football-outline"></i>Герта – Гамбург</p>
-        <p><i class="ion-android-time"></i>28 октября 2017 16:30<p>
-        <p><i class="ion-home"></i>Стадион Олимпияштадион</p>
+        <p><i class="ion-ios-football-outline"></i>Герта - Боруссия Д</p>
+        <p><i class="ion-android-time"></i>19 января 2018 22:30<p>
+        <p><i class="ion-home"></i>Олимпияштадион</p>
       </div>
     </div>
 
@@ -58,6 +58,7 @@
   var posts = require('../posts')
   var sliderposts = require('../sliderposts')
 
+
   export default {
     name: 'carousel-wrapper',
     components: {
@@ -83,6 +84,8 @@
     height: 100%!important
     margin: 0!important
     margin-bottom: 20px!important
+    @media (#{$max_ipad})
+      display: none
 
   .carousel-3d-slider
     width: 70%!important
@@ -147,6 +150,7 @@
     width: 100%
     height: 100%
     background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover
     position: absolute
     top: 0
     left: 0
@@ -155,11 +159,11 @@
     z-index: 1
 
   .slide-a
-    background-image: url('http://www.berliner-kurier.de/image/25174836/2x1/940/470/888cd22990f6830a04ee34f0949f76db/LC/hertha-mainz.jpg')
+    background-image: url('../../img/news/marcelinho-16-01-17.jpg')
   .slide-b
-    background-image: url('http://media.gettyimages.com/photos/peter-niemeyer-and-marcel-ndjeng-of-hertha-bsc-during-the-game-bsc-picture-id464763980')
+    background-image: url('../../img/news/orafol-hertha-16-01-17.jpg')
   .slide-c
-    background-image: url('http://media.gettyimages.com/photos/aenis-benhatira-salomon-kalou-and-marvin-plattenhardt-of-hertha-bsc-picture-id464763970')
+    background-image: url('../../img/news/julian-schieber-30-11-17.jpg')
 
   .matches-info
     display: -webkit-flex
@@ -171,13 +175,14 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 25px
-    @media (#{$max_ipad})
-      flex-wrap: wrap
+    flex-wrap: wrap
     p, h4
       font-family: $font-roboto-light
     .last-match
       padding-left: 20px
-      width: 70%
+      width: 60%
+      @media (#{$max_ipad})
+        width: 100%
       p
         &:nth-of-type(1)
           font-size: 20px
@@ -191,6 +196,8 @@
       border-radius: 5px
       color: #fff
       padding: 50px
+      @media (#{$max_ipad})
+        width: 100%
       i
         font-size: 30px
 
@@ -206,6 +213,8 @@
     flex-wrap: wrap
     .blog__post.main-blog__post
       width: 65%
+      @media (#{$max_ipad})
+        width: 100%
       .news-image
         height: 515px;
         img:hover
@@ -217,6 +226,8 @@
       width: 32%
       position: relative
       margin-bottom: 50px
+      @media (#{$max_ipad})
+        width: 100%
       .news-date
        position: absolute
        z-index: 1
