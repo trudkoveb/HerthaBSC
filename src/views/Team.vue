@@ -43,7 +43,7 @@
         players: [
           {
             number: '1',
-            name: 'Томас Крафт',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Вратарь',
             age: '28',
@@ -52,7 +52,7 @@
           },
           {
             number: '22',
-            name: 'Руне Ярстейн',
+            name: 'Lorem Lorem',
             image: '../img/flags/norway-flag.png',
             position: 'Вратарь',
             age: '32',
@@ -61,7 +61,7 @@
           },
           {
             number: '25',
-            name: 'Джордан Торунарига',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Вратарь',
             age: '19',
@@ -70,7 +70,7 @@
           },
           {
             number: '4',
-            name: 'Карим Рекик',
+            name: 'Lorem Lorem',
             image: '../img/flags/holl-flag.png',
             position: 'Вратарь',
             age: '22',
@@ -79,7 +79,7 @@
           },
           {
             number: '17',
-            name: 'Максимилиан Миттельштедт',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Защитник',
             age: '20',
@@ -88,7 +88,7 @@
           },
           {
             number: '21',
-            name: 'Марвин Платтенхардт',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Защитник',
             age: '25',
@@ -97,7 +97,7 @@
           },
           {
             number: '23',
-            name: 'Митчелл Вайзер',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Защитник',
             age: '23',
@@ -106,7 +106,7 @@
           },
           {
             number: '5',
-            name: 'Никлас Штарк',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Защитник',
             age: '33',
@@ -115,7 +115,7 @@
           },
           {
             number: '34',
-            name: 'Максимиллиан Миттельштадт',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Защитник',
             age: '20',
@@ -124,7 +124,7 @@
           },
           {
             number: '2',
-            name: 'Петер Пекарик',
+            name: 'Lorem Lorem',
             image: '../img/flags/slovac-flag.png',
             position: 'Защитник',
             age: '30',
@@ -133,7 +133,7 @@
           },
           {
             number: '15',
-            name: 'Себастьян Лангкамп',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Защитник',
             age: '28',
@@ -142,7 +142,7 @@
           },
           {
             number: '28',
-            name: 'Фабиан Лустенбергер',
+            name: 'Lorem Lorem',
             image: '../img/flags/swiss-flag.png',
             position: 'Защитник',
             age: '29',
@@ -151,7 +151,7 @@
           },
           {
             number: '14',
-            name: 'Валентин Штокер',
+            name: 'Lorem Lorem',
             image: '../img/flags/swiss-flag.png',
             position: 'Полузащитник',
             age: '28',
@@ -160,7 +160,7 @@
           },
           {
             number: '26',
-            name: 'Арне Майер',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Полузащитник',
             age: '18',
@@ -169,7 +169,7 @@
           },
           {
             number: '21',
-            name: 'Митчелл Вайзер',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Полузащитник',
             age: '29',
@@ -178,7 +178,7 @@
           },
           {
             number: '6',
-            name: 'Владимир Дарида',
+            name: 'Lorem Lorem',
             image: '../img/flags/chech-flag.png',
             position: 'Полузащитник',
             age: '27',
@@ -187,7 +187,7 @@
           },
           {
             number: '24',
-            name: 'Генки Харагучи',
+            name: 'Lorem Lorem',
             image: '../img/flags/japan-flag.png',
             position: 'Полузащитник',
             age: '26',
@@ -196,7 +196,7 @@
           },
           {
             number: '10',
-            name: 'Ондрей Дуда',
+            name: 'Lorem Lorem',
             image: '../img/flags/slovac-flag.png',
             position: 'Полузащитник',
             age: '22',
@@ -205,7 +205,7 @@
           },
           {
             number: '11',
-            name: 'Мэтью Лекки',
+            name: 'Lorem Lorem',
             image: '../img/flags/australia-flag.png',
             position: 'Полузащитник',
             age: '26',
@@ -214,7 +214,7 @@
           },
           {
             number: '3',
-            name: 'Пер Шелбред',
+            name: 'Lorem Lorem',
             image: '../img/flags/norway-flag.png',
             position: 'Полузащитник',
             age: '30',
@@ -223,7 +223,7 @@
           },
           {
             number: '27',
-            name: 'Дэви Зельке',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Форвард',
             age: '22',
@@ -232,7 +232,7 @@
           },
           {
             number: '8',
-            name: 'Саломон Калу',
+            name: 'Lorem Lorem',
             image: '../img/flags/ivuar-flag.png',
             position: 'Форвард',
             age: '32',
@@ -241,7 +241,7 @@
           },
           {
             number: '19',
-            name: 'Ведад Ибишевич',
+            name: 'Lorem Lorem',
             image: '../img/flags/germany-flag.png',
             position: 'Форвард',
             age: '32',

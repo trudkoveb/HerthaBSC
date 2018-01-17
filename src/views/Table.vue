@@ -43,15 +43,15 @@
     div.place-description
       ul
         li
-          | Лига Чемпионов
+          | Lorem
         li
-          | Квалификация Лиги Чемпионов
+          | Lorem
         li
-          | Лига Европы
+          | Lorem
         li
-          | Плей-офф за вылет
+          | Lorem
         li
-          | Вылет
+          | Lorem
 </template>
 
 <script>
@@ -61,7 +61,7 @@
         search: '',
         clubs: [
         {
-          name: 'Герта',
+          name: 'Lorem',
           matches: '18',
           points: 24,
           status: true,
@@ -72,7 +72,7 @@
           missedGoals: 26
         },
         {
-          name: 'Бавария',
+          name: 'Lorem',
           matches: '18',
           points: 44,
           status: false,
@@ -83,7 +83,7 @@
           missedGoals: 12
         },
         {
-          name: 'РБ Лейпциг',
+          name: 'Lorem',
           matches: '18',
           points: 31,
           status: false,
@@ -94,7 +94,7 @@
           missedGoals: 26
         },
         {
-          name: 'Боруссия Д',
+          name: 'Lorem',
           matches: '18',
           points: 29,
           status: false,
@@ -105,7 +105,7 @@
           missedGoals: 24
         },
         {
-          name: 'Хоффенхайм-1899',
+          name: 'Lorem',
           matches: '18',
           points: 27,
           status: false,
@@ -116,7 +116,7 @@
           missedGoals: 23
         },
         {
-          name: 'Кельн',
+          name: 'Lorem',
           matches: '18',
           points: 9,
           status: false,
@@ -127,7 +127,7 @@
           missedGoals: 33
         },
         {
-          name: 'Фрайбург',
+          name: 'Lorem',
           matches: '20',
           points: 19,
           status: false,
@@ -138,7 +138,7 @@
           missedGoals: 32
         },
         {
-          name: 'Вердер',
+          name: 'Lorem',
           matches: '18',
           points: 16,
           status: false,
@@ -149,7 +149,7 @@
           missedGoals: 21
         },
         {
-          name: 'Боруссия М',
+          name: 'Lorem',
           matches: '18',
           points: 28,
           status: false,
@@ -160,7 +160,7 @@
           missedGoals: 30
         },
         {
-          name: 'Шальке-04',
+          name: 'Lorem',
           matches: '18',
           points: 30,
           status: false,
@@ -171,7 +171,7 @@
           missedGoals: 24
         },
         {
-          name: 'Айнтрахт Ф',
+          name: 'Lorem',
           matches: '18',
           points: 27,
           status: false,
@@ -182,7 +182,7 @@
           missedGoals: 19
         },
         {
-          name: 'Байер',
+          name: 'Lorem',
           matches: '18',
           points: 28,
           status: false,
@@ -193,7 +193,7 @@
           missedGoals: 26
         },
         {
-          name: 'Аугсбург',
+          name: 'Lorem',
           matches: '18',
           points: 27,
           status: false,
@@ -204,7 +204,7 @@
           missedGoals: 23
         },
         {
-          name: 'Гамбург',
+          name: 'Lorem',
           matches: '18',
           points: 15,
           status: false,
@@ -215,7 +215,7 @@
           missedGoals: 26
         },
         {
-          name: 'Майнц',
+          name: 'Lorem',
           matches: '18',
           points: 17,
           status: false,
@@ -226,7 +226,7 @@
           missedGoals: 31
         },
         {
-          name: 'Вольфсбург',
+          name: 'Lorem',
           matches: '18',
           points: 20,
           status: false,
@@ -237,7 +237,7 @@
           missedGoals: 21
         },
         {
-          name: 'Штутгарт',
+          name: 'Lorem',
           matches: '18',
           points: 20,
           status: false,
@@ -248,7 +248,7 @@
           missedGoals: 21
         },
         {
-          name: 'Ганновер 96',
+          name: 'Lorem',
           matches: '18',
           points: 26,
           status: false,

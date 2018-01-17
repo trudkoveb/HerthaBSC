@@ -194,7 +194,8 @@ header {
   font-size: 12px; }
 
 .header-logo {
-  text-align: center; }
+  text-align: center;
+  margin-top: -20px; }
   @media (max-width: 767px) {
     .header-logo {
       margin-top: 0; }

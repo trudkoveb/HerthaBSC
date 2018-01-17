@@ -16,19 +16,19 @@
 
     <div class="matches-info">
       <div class="last-match">
-        <p>Штутгарт - Герта 1:0</p>
-        <p><span>Голы :</span> 78' Штарк (Гомес) (автогол)</p>
-        <p><span>Замены :<br></span><i class="ion-arrow-down-a"></i>Донис, Аколо, Озджан<i class="ion-arrow-up-a"></i>Гинчек, Инсуа, Бадштубер<br>
-          <i class="ion-arrow-down-a"></i>Зельке, Лазаро<i class="ion-arrow-up-a"></i>Ибишевич, Дуда
+        <p>Lorem - Lorem 1:1</p>
+        <p><span>Голы :</span> 78' Lorem - 16' Lorem</p>
+        <p><span>Замены :<br></span><i class="ion-arrow-down-a"></i>Lorem, Lorem, Lorem<i class="ion-arrow-up-a"></i>Lorem, Lorem, Lorem<br>
+          <i class="ion-arrow-down-a"></i>Lorem, Lorem<i class="ion-arrow-up-a"></i>Lorem, Lorem
         </p>
-        <p><span>Желтые карточки :</span> Гомес -</p>
-        <p><span>Красные карточки :</span></p>
+        <p><span>Желтые карточки :</span> Lorem - Lorem</p>
+        <p><span>Красные карточки :</span>Lorem -</p>
       </div>
       <div class="next-match">
         <h4><i class="ion-fireball"></i>Следующий матч:</h4>
-        <p><i class="ion-ios-football-outline"></i>Герта - Боруссия Д</p>
-        <p><i class="ion-android-time"></i>19 января 2018 22:30<p>
-        <p><i class="ion-home"></i>Олимпияштадион</p>
+        <p><i class="ion-ios-football-outline"></i>Lorem - Lorem</p>
+        <p><i class="ion-android-time"></i>19 января 2142 22:30<p>
+        <p><i class="ion-home"></i>Lorem</p>
       </div>
     </div>
 
@@ -159,11 +159,11 @@
     z-index: 1
 
   .slide-a
-    background-image: url('../../img/news/marcelinho-16-01-17.jpg')
+    background-image: url('../../img/news/image.jpg')
   .slide-b
-    background-image: url('../../img/news/orafol-hertha-16-01-17.jpg')
+    background-image: url('../../img/news/image.jpg')
   .slide-c
-    background-image: url('../../img/news/julian-schieber-30-11-17.jpg')
+    background-image: url('../../img/news/image.jpg')
 
   .matches-info
     display: -webkit-flex

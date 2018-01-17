@@ -2,14 +2,14 @@
   div(class="main-content")
     div(class="achievements-wrapper")
       div(class="achievement-example")
-        img(src="../../img/pictures/achievements/bundesliga-cup.jpg", class="img-responsive center-block", alt="Чемпионат Германии", title="Чемпионат Германии", width="300", height="221")
-        p Чемпион Германии (1930, 1931)
+        img(src="../../img/pictures/achievements/image3.png", class="img-responsive center-block", alt="Lorem", title="Lorem")
+        p  Lorem ipsum (2142, 2142)
       div(class="achievement-example")
-        img(src="../../img/pictures/achievements/germany_cup_leauge.jpg", class="img-responsive center-block", alt="Кубок немецкой лиги", title="Кубок немецкой лиги", width="300", height="221")
-        p Кубок Немецкой Лиги (2001, 2002)
+        img(src="../../img/pictures/achievements/image3.png", class="img-responsive center-block", alt="Lorem", title="Lorem")
+        p  Lorem ipsum (2142, 2142)
       div(class="achievement-example")
-        img(src="../../img/pictures/achievements/intertoto-cup.jpg", class="img-responsive center-block", alt="Кубок Интертото", title="Кубок Интертото", width="300",  height="221")
-        p Кубок Интертото (2006)
+        img(src="../../img/pictures/achievements/image3.png", class="img-responsive center-block", alt="Lorem", title="Lorem")
+        p  Lorem ipsum (2142)
 </template>
 
 <script>

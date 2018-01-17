@@ -2,25 +2,25 @@ module.exports = [
   {
     class: 'slide-a',
     index: 0,
-    title: 'Легенда',
-    shortTitle: 'Замечательная статья об одном из самых самобытных игроков Герты',
-    body: '<p>Именно благодаря футбольной магии таких игроков как Марселиньо бесповоротно влюбляешься в футбол. Потрясающий бразилец и потрясающая Герта середины 2000-x!</p><p>"...cезон-2004/05 стал лучшим в карьере бразильца, который забил 18 голов и сделал 13 результативных передач, благодаря которым «Герта» поднялась на четвёртую позицию в лиге. В ноябре Марселиньо забил три мяча, которые позволили переиграть «Вольфсбург» со счётом 3:2. При этом голы даже..."</p><p><a href="http://laliga-spain.ru/prognozy/110600-marselino-neobuzdannyy-brazilec-stavshiy-v-berline-svoim.html" target="_blank">Источник</a></p>',
-    image: '../img/news/marcelinho-16-01-17.jpg'
+    title: 'Lorem ipsum dolor sit.',
+    shortTitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    body: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique voluptatibus voluptatem, omnis laudantium fugiat magni ipsum, et officiis consequatur.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fugit magni sed excepturi eveniet. Beatae esse incidunt quia veniam facere minus, illo debitis repellendus doloribus animi, modi blanditiis repellat commodi, facilis, corporis. Quia molestias quod pariatur, perspiciatis porro voluptates cumque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, mollitia.</p>',
+    image: '../img/news/image.jpg'
   },
   {
     class: 'slide-b',
     index: 1,
-    title: 'Еще минимум год!',
-    shortTitle: 'Герта и компания Orafol продлили спонсорское соглашение',
-    body: '<p>Контракт будет действовать весь следующий сезон и истечёт 30 июня 2019 года.<p>Реклама Orafol продолжит демонстрироваться на светодиодных баннерах вокруг Олимпияштадион. Также Ораниенбургская компания будет организовывать молодежные футбольные мероприятия для клуба.</p><p>По данным немецкого спортивного новостного агентства Sponsors.de, партнерство с Orafol приносит Герте около 750 000 € ( 920 000 $ ) каждый год. Фирма спонсирует команду с сезона 2016/17.</p>Напомним, что другие эксклюзивные партнеры берлинцев включают в себя автопроизводителя Audi, финансовую фирму Berliner Volksbank, компанию Carlsberg и производителя газировки Coca-Cola.</p>',
-    image: '../img/news/orafol-hertha-16-01-17.jpg'
+    title: 'Lorem ipsum dolor sit.',
+    shortTitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    body: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique voluptatibus voluptatem, omnis laudantium fugiat magni ipsum, et officiis consequatur.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fugit magni sed excepturi eveniet. Beatae esse incidunt quia veniam facere minus, illo debitis repellendus doloribus animi, modi blanditiis repellat commodi, facilis, corporis. Quia molestias quod pariatur, perspiciatis porro voluptates cumque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, mollitia.</p>',
+    image: '../img/news/image.jpg'
   },
   {
     class: 'slide-c',
     index: 2,
-    title: 'Шибер возвращается',
-    shortTitle: '"Нападающий Герты Юлиан Шибер..."',
-    body: '<p>Нападающий Герты Юлиан Шибер вернулся в строй после длительного восстановления. Официальный сайт берлинского клуба сообщил, что форвард приступил к тренировкам. Юлиан не играл с начала года после операции на колене. Напомним, что для нападающего это была вторая операция за два года. В прошлом сезоне он забил три мяча в 18 матчах бундеслиги.</p>',
-    image: '../img/news/julian-schieber-30-11-17.jpg'
+    title: 'Lorem ipsum dolor sit.',
+    shortTitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    body: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique voluptatibus voluptatem, omnis laudantium fugiat magni ipsum, et officiis consequatur.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fugit magni sed excepturi eveniet. Beatae esse incidunt quia veniam facere minus, illo debitis repellendus doloribus animi, modi blanditiis repellat commodi, facilis, corporis. Quia molestias quod pariatur, perspiciatis porro voluptates cumque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, mollitia.</p>',
+    image: '../img/news/image.jpg'
   }
 ]
