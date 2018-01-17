@@ -4,27 +4,27 @@
       div(class="history-info")
         p
           |
-          span(class="bold") Дата основания :
-          |  25 июля 2142 года
+          span(class="bold") Year of foundation :
+          |  25 july 2142
         p
           |
-          span(class="bold") Стадион :
-          |  Lorem (г. Lorem), вместимость 10.500.
+          span(class="bold") Stadium :
+          |  Lorem ( Lorem ), capacity 10.500.
         p
           |
-          span(class="bold") Официальный сайт клуба :
+          span(class="bold") Official site:
           a(href="#", target="_blank") www.google.com
         p
           |
-          span(class="bold") Тренер :
+          span(class="bold") Coach :
           |  Lorem Lorem
         p
           |
-          span(class="bold") Прозвище :
+          span(class="bold") Byname :
           |   Lorem ipsum ( Lorem ipsum)
         p
           |
-          span(class="bold") Цвета :
+          span(class="bold") Colors :
           |  lorem-lorem
       div(id="carousel-wrapper")
         carousel-3d(:perspective="180", :display="1", :autoplay="true", :autoplayTimeout="3000", :controls-visible="true")
@@ -115,6 +115,9 @@
       background-image: url('../../img/news/image.jpg')
     .slide-f
       background-image: url('../../img/news/image.jpg')
+    .slide-a:after, .slide-b:after, .slide-c:after
+      content: ''
+      display: none
 
     .history-info
       p

@@ -17,17 +17,17 @@
     <div class="matches-info">
       <div class="last-match">
         <p>Lorem - Lorem 1:1</p>
-        <p><span>Голы :</span> 78' Lorem - 16' Lorem</p>
-        <p><span>Замены :<br></span><i class="ion-arrow-down-a"></i>Lorem, Lorem, Lorem<i class="ion-arrow-up-a"></i>Lorem, Lorem, Lorem<br>
+        <p><span>Goals :</span> 78' Lorem - 16' Lorem</p>
+        <p><span>Substitutions :<br></span><i class="ion-arrow-down-a"></i>Lorem, Lorem, Lorem<i class="ion-arrow-up-a"></i>Lorem, Lorem, Lorem<br>
           <i class="ion-arrow-down-a"></i>Lorem, Lorem<i class="ion-arrow-up-a"></i>Lorem, Lorem
         </p>
-        <p><span>Желтые карточки :</span> Lorem - Lorem</p>
-        <p><span>Красные карточки :</span>Lorem -</p>
+        <p><span>Yellow cards :</span> Lorem - Lorem</p>
+        <p><span>Red cards :</span> Lorem -</p>
       </div>
       <div class="next-match">
-        <h4><i class="ion-fireball"></i>Следующий матч:</h4>
+        <h4><i class="ion-fireball"></i>Next match:</h4>
         <p><i class="ion-ios-football-outline"></i>Lorem - Lorem</p>
-        <p><i class="ion-android-time"></i>19 января 2142 22:30<p>
+        <p><i class="ion-android-time"></i>19 january 2142 22:30<p>
         <p><i class="ion-home"></i>Lorem</p>
       </div>
     </div>
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <button class="standard-btn" @click="limit += 3">Показать еще</button>
+    <button class="standard-btn" @click="limit += 3">Show previous news</button>
 
   </div>
 </template>
@@ -68,7 +68,7 @@
     data: function () {
       return {
         slides: 3,
-        readMore: 'Читать дальше',
+        readMore: 'Read more',
         posts: posts,
         sliderposts: sliderposts,
         limit: 5

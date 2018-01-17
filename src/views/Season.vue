@@ -28,29 +28,29 @@
 
       #countryCup-template(style='display:none;')
         div
-          h2 Lorem ipsum. 1/128 финала
+          h2 Lorem ipsum. 1/128
           table.season-table
             thead
               tr
                 th(colspan="2") Lorem 1:3 Lorem
             tbody
               tr
-                td(colspan="2") Голы:
+                td(colspan="2") Goals:
               tr
                 td 69' Lorem
                 td 35' Lorem, 43' Lorem, 65' Lorem
               tr
-                td(colspan="2") Желтые картчоки:
+                td(colspan="2") Yellow cards:
               tr
                 td 86' Lorem
                 td 14' Lorem
               tr
-                td(colspan="2") Красные карточки:
+                td(colspan="2") Red cards:
               tr
                 td -
                 td Lorem
               tr
-                td(colspan="2") Замены:
+                td(colspan="2") Substitutions:
               tr
                 td 47' <i class="ion-arrow-down-a"></i>Lorem - <i class="ion-arrow-up-a"></i>Lorem<br>59' <i class="ion-arrow-down-a"></i>Lorem - <i class="ion-arrow-up-a"></i>Lorem<br>59' <i class="ion-arrow-down-a"></i>Lorem - <i class="ion-arrow-up-a"></i>Lorem
                 td 57' <i class="ion-arrow-down-a"></i>Lorem - <i class="ion-arrow-up-a"></i>Lorem<br>77' <i class="ion-arrow-down-a"></i>Lorem - <i class="ion-arrow-up-a"></i>Lorem
@@ -58,16 +58,16 @@
 
       #euroCup-template(style='display:none;')
         div
-          h2 Lorem ipsum. Группа X
+          h2 Lorem ipsum. Group X
           table.season-table.league-europe-table
             thead
               tr
-                th Команда
-                th В
-                th Н
-                th П
-                th ЗМ\ПМ
-                th О
+                th Club
+                th W
+                th D
+                th L
+                th G
+                th P
             tbody
               tr(v-for="leagueEurope in orderBy(leagueEuropes, 'points', 'wins', -1)", v-bind:class="{ 'hertha-color': leagueEurope.status }")
                 td {{ leagueEurope.team }}

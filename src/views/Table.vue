@@ -8,19 +8,19 @@
             th
             th
             th
-              | Матчи
+              | Matches
             th
-              | Очки
+              | Points
             th
-              | Победы
+              | Wins
             th
-              | Ничьи
+              | Draws
             th
-              | Поражения
+              | Losses
             th
-              | Голы
+              | Goals
             th
-              | Разница
+              | Goals difference
         tbody
           tr(v-for="club in orderBy(clubs, 'points', 'scoredGoals', -1)", v-bind:class="{ 'hertha-color': club.status }")
             td
